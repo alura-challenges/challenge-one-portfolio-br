@@ -4,7 +4,7 @@
      <img width="800" heigth="600" src="https://user-images.githubusercontent.com/91544872/153615296-0acc6580-fa92-4539-a572-76f4915c661a.png">
 </p>
 
-### Seja bem vindo ao projeto base do AluraGeek! Passos fundamentais:
+### Seja bem vindo ao projeto base do Portfólio! Passos fundamentais:
 
 #### Marque esse projeto com uma estrela ⭐
 #### Siga as instruções das aulas e conteúdos 📚
