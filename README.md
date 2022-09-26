@@ -1,4 +1,4 @@
-# Alura Challenge | Oracle One | Front-end | Portfólio
+# Challenge ONE | Front End - Portfólio
 ---
 
 <p align="center" >
