@@ -46,7 +46,7 @@ Vá na aba "Sobre" ou "About" do seu projeto no menu lateral que fica na esquerd
 
 4) Preencha o formulário a seguir com seus dados pessoais, juntamente com o link do seu repositório e do seu GitHub Pages.
 
-🔹 [Link para o formulário](https://lp.alura.com.br/alura-latam-lp-entrega-de-challenge-one)
+🔹 [Link para o formulário](https://lp.alura.com.br/alura-latam-entrega-challenge-one-portugues)
  ![image](https://user-images.githubusercontent.com/92184087/208179699-a9fc5b9e-c9b5-4dab-a711-43ddfbcd00d0.png)
 
 5) Vá para seu e-mail e resgate sua badge conquistada por encerrar mais um desafio no Projeto ONE! 🏆
