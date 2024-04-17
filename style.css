@@ -5,15 +5,21 @@ coloque nas sessões indicadas*/
 :root{
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
+    
+    --cor-1: #13507C;
+    --cor-2: #C62E65;
+    --cor-3: #F3A712;
+    --cor-4: #DAE7DE;
+   --cor-padrao: #F5F5F5;
    --cor-de-link: #000;
 }
 
 body {
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
+    background-color: var(--cor-4);
     font-family: 'Raleway';
-    margin: 0;
+    color: #000;
+    margin: 1% 8%;
     padding: 0;
     line-height: 1;
 }
@@ -40,20 +46,73 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sessão Menu*/
 
-section.menu{
-
+.menu__name{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
+
+section.menu{
+    width: 100%;
+    margin: 0%;
+    display: flex;
+}
+
+.menu__header{
+    padding: 0%;
+}
+
+.menu__list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
 
 /*Sessão Title*/
 
 section.title{
-
+    display: flex;
 }
 
+div.title__div{
+    width: 100%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.title__profile {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    border-radius: 100%;
+}
+
+.title__network{
+    display: flex;
+    gap: 1rem;
+}
 /*Sessão About*/
 
 section.about{
 
+}
+
+.skills__title, .hobbies__title, .academic__title, .experience__section__title {
+    text-align: center;
+}
+
+.skills__line, .hobbies__line{
+    text-align: center;
+    background-color: var(--cor-de-fundo);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
 }
 
 /*Sessão Hobbies*/
