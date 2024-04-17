@@ -30,6 +30,14 @@ input, textarea, button {
     all: unset;
 }
 
+button {
+    cursor: pointer;
+}
+
+h1, h2, h3 {
+    color: #464646;
+}
+
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
 de utiliza-la. 
 
@@ -45,7 +53,7 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sessão Menu*/
 
-section.menu{
+section.menu {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -70,14 +78,34 @@ section.menu .menu__list {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    section.menu {
+        padding: 2rem 2rem 0;
+    }
+
+    section.menu .menu__list {
+        display: none;
+    }
+}
+
+@media (max-width: 376px) {
+    section.menu {
+        padding: 1rem 1rem 0;
+    }
+
+    section.menu .menu__list {
+        display: none;
+    }
 }
 
 /*Sessão Title*/
 
-section.title{
+section.title {
     margin-bottom: 30px;
-    padding: 2rem 4rem;
+    padding: 4rem;
 }
 
 section.title .title__div {
@@ -85,16 +113,80 @@ section.title .title__div {
     align-items: center;
     justify-content: space-between;
     flex-direction: row-reverse;
+    gap: 10px;
 }
 
+
 section.title .title__div .title__profile {
-    height: 300px;
+    height: 20rem;
     width: auto;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+section.title .title__bo {
+    font-weight: 700;
+}
+
+section.title .title__subsection {
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    section.title {
+        padding: 2rem;
+    }
+
+    section.title .title__div .title__profile {
+        height: 10rem;
+        margin-bottom: 40px;
+    }
+
+    section.title .title__div .title__bio {
+        font-size: 1.6rem;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 376px) {
+    section.title {
+        padding: 1rem;
+    }
+
+    section.title .title__div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    section.title .title__div .title__profile {
+        height: 6rem;
+        margin-bottom: 5px;
+    }
+
+    section.title .title__div .title__bio {
+        font-weight: 700;
+        line-height: 28px;
+        font-size: 1.4rem;
+    }
+
+    section.title .title__subsection {
+        font-size: 1.1rem;
+    }
+
+    section.title .title__network {
+        flex-wrap: wrap;
+    }
+
+    section.title .title__network__item {
+        font-size: .8rem;
+    }
 }
 
 section.title .title__div .title__container .title__network {
     display: flex;
-    gap: 16px;
+    gap: 26px;
     padding: 0;
 }
 
@@ -102,13 +194,29 @@ section.title .title__div .title__container .title__network {
 
 section.about{
     background-color: #EAF2FD;
-    padding: 2rem 4rem;
+    padding: 4rem;
+}
+
+section.about .about__paragraph {
+    line-height: 26px;
+}
+
+@media (max-width: 768px) {
+    section.about { 
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 376px) {
+    section.about { 
+        padding: 1rem;
+    }
 }
 
 /*Sessão Skills*/
 
 section.skills {
-    padding: 2rem 4rem;
+    padding: 4rem;
 }
 section #skills {
     display: flex;
@@ -116,14 +224,15 @@ section #skills {
     justify-content: center;
     text-align: center;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 section.skills .skills__line {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(176px, 1fr)); /* Define o número de colunas e sua largura mínima/máxima */
+    display: flex;
     gap: 14px;
-    justify-items: center; /* Alinha os itens horizontalmente no centro */
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 section.skills .skills__line .skills__box {
@@ -141,10 +250,43 @@ section .skills__box ul {
     flex-direction: column;
 }
 
+@media (max-width: 768px) {
+    section.skills {
+        padding: 2rem;
+    }
+
+    section.skills .skills__line {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px; 
+        justify-content: center;
+        align-items: center; 
+    }
+}
+
+@media (max-width: 376px) {
+    section.skills {
+        padding: 1rem;
+    }
+
+    section.skills .skills__line {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 2fr));
+        gap: 20px; 
+        justify-content: center;
+        align-items: center; 
+    }
+
+    section.skills .skills__line .skills__box {
+        height: 130px;
+        width: 130px;
+    }
+}
+
 /*Sessão Hobbies*/
 
 section.hobbies {
-    padding: 2rem 4rem;
+    padding: 4rem;
 }
 section .hobbies__title {
     display: flex;
@@ -152,14 +294,15 @@ section .hobbies__title {
     justify-content: center;
     text-align: center;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 section.hobbies .hobbies__line {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(176px, 1fr)); /* Define o número de colunas e sua largura mínima/máxima */
+    display: flex;
     gap: 14px;
-    justify-items: center; /* Alinha os itens horizontalmente no centro */
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 section.hobbies .hobbies__line .hobbies__box {
@@ -177,18 +320,50 @@ section .hobbies__box ul {
     flex-direction: column;
 }
 
+@media (max-width: 768px) {
+    section.hobbies {
+        padding: 2rem;
+    }
+
+    section.hobbies .hobbies__line {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px; 
+        justify-content: center;
+        align-items: center; 
+    }
+
+@media (max-width: 376px) {
+    section.hobbies {
+        padding: 1rem;
+    }
+
+    section.hobbies .hobbies__line {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 2fr));
+        gap: 20px; 
+        justify-content: center;
+        align-items: center; 
+    }
+
+    section.hobbies .hobbies__line .hobbies__box {
+        height: 130px;
+        width: 130px;
+    }
+}
+}
+
 /* Experiência Acadêmica*/
 
-section.academic{
+section.academic {
     background-color: #EAF2FD;
     padding: 2rem 4rem 8rem;
 }
 
 section.academic .academic__courses {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Define o número de colunas e sua largura mínima/máxima */
-    gap: 14px;
-    justify-items: center; /* Alinha os itens horizontalmente no centro */
+    display: flex;
+    gap: 30px;
+    justify-content: center;
     align-items: center;
 }
 
@@ -198,6 +373,7 @@ section .academic__title {
     justify-content: center;
     text-align: center;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 section .academic__courses__box {
@@ -206,21 +382,68 @@ section .academic__courses__box {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 280px;
-    width: 310px;
+    height: 20rem;
+    width: 18rem;
     background-color: #ffffff;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section .academic__courses__box:nth-child(1) {
+    background-image: url("./assets/image-wyden.jpg");
+}
+
+section .academic__courses__box:nth-child(2) {
+    background-image: url("./assets/image-cubos-academy.png");
+}
+
+section .academic__courses__box:nth-child(3) {
+    background-image: url("./assets/image-gama-academy.jpg");
 }
 
 section .academic__courses__list {
     position: absolute;
     left: 0;
-    bottom: -86px;
+    bottom: -4rem;
 }
+
+section .academic__courses__item__title h4 {
+    margin: 0 0 10px;
+}
+
+section .academic__courses__item__subtitle p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    section.academic {
+        padding: 2rem 2rem 6rem;
+    }
+
+    section .academic__courses__box {
+        height: 14rem;
+        width: 14rem;
+    }
+}
+
+@media (max-width: 376px) {
+    section.academic {
+        padding: 1rem 1rem 6rem;
+    }
+
+    section.academic .academic__courses {
+        flex-direction: column;
+        gap: 120px;
+    }
+}
+
 
 /* experiência*/
 
 section.experience {
-    padding: 2rem 4rem;
+    padding: 4rem;
 }
 
 section .experience__section__title {
@@ -229,24 +452,30 @@ section .experience__section__title {
     justify-content: center;
     text-align: center;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 section.experience .experience__box {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+}
+
+section.experience .experience__box .experience__img {
+    height: 22rem;
+    width: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.251);
 }
 
 section.experience .experience__box:nth-child(3) {
     flex-direction: row-reverse;
 }
 
-section.experience .experience__box .experience__img {
-    height: auto;
-    max-width: 60%;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.251);
-}
 
 section.experience .experience__text {
     font-weight: 500;
@@ -261,6 +490,12 @@ section.experience .experiencia__botao--repo {
     background-color: #F5F5F5;
     border: 1px solid #2A7AE4;
     margin-right: 8px;
+    transition: background-color ease .3s;
+}
+
+section.experience .experiencia__botao--repo:hover {
+    color: #F5F5F5;
+    background-color: #2A7AE4;
 }
 
 section.experience .experiencia__botao--demo {
@@ -269,19 +504,70 @@ section.experience .experiencia__botao--demo {
     padding: 18px 16px;
     color: #ffffff;
     background-color: #2A7AE4;
-    border: 1px solid #F5F5F5;
+    border: 1px solid #2A7AE4;
+    transition: background-color ease .3s;
+}
+
+section.experience .experiencia__botao--demo:hover {
+    color: #2A7AE4;
+    background-color: #F5F5F5;
+}
+
+@media (max-width: 768px) {
+    section.experience {
+        padding: 2rem;
+    }
+
+    section.experience .experience__box .experience__description {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section.experience .experiencia__botao--demo {
+        
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 376px) {
+    section.experience {
+        padding: 1rem;
+    }
+
+    section.experience .experience__box {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    section.experience .experience__box:nth-child(3) {
+        flex-direction: column;
+    }
+
+    section.experience .experience__box .experience__img {
+        width: 100%;
+    }
+
+    section.experience .experience__box .experience__info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    section.experience .experience__box .experience__title {
+        margin-bottom: 0;
+    }
 }
 
 /*Contato*/
 
-section.formcontato{
+section.formcontato {
     display: flex;
     background-color: #EAF2FD;
-    height: 580px;
-    padding: 4rem 4rem;
+    height: 540px;
+    padding: 4rem;
 }
 
-section.formcontato .formcontato__contacto{
+section.formcontato .formcontato__contacto {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -290,7 +576,13 @@ section.formcontato .formcontato__contacto{
 
 section .formcontato--esquerda {
     height: 100%;
+    width: auto;
     flex-grow: 1;
+
+    background-image: url("./assets/image-contac.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 section .formcontato--esquerda .formcontato__img {
@@ -307,7 +599,6 @@ section .formcontato__subtext h3 {
     margin: 0 0 8px;
     gap: 0;
 }
-
 
 section .formcontato__text {
     display: flex;
@@ -350,10 +641,47 @@ section .formcontato__button {
     padding: 18px 16px;
     color: #ffffff;
     background-color: #2A7AE4;
+    cursor: pointer;
 }
 
 section .formcontato__button:hover {
     background-color: rgba(42, 122, 228, .8);
+}
+
+@media (max-width: 768px) {
+    section.formcontato {
+        padding: 2rem;
+    }
+
+    section.formcontato .formcontato__contacto {
+        width: 100%;
+    }
+
+    section .formcontato--esquerda {
+        display: none;
+    }
+
+    section .formcontato__subtext h3 {
+        font-weight: 500;
+    }
+
+    section .formcontato__input, .formcontato__textarea {
+        box-sizing: border-box;
+    }
+
+    section .formcontato__textarea {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 376px) {
+    section .formcontato__subtext h3 {
+        font-size: 1rem;
+    }
+
+    section .formcontato__input::placeholder {
+        font-size: 1rem;
+    }
 }
 
 /*footeer*/
@@ -371,6 +699,16 @@ section .footer__rodape {
 
 section .footer__rodape p {
     margin: 4px 0;
+}
+
+@media (max-width: 376px) {
+    section.footer{
+        padding: 1rem 2rem;
+    }
+
+    section .footer__rodape p {
+        font-size: .8rem;
+    }
 }
 
 /* Chegou a hora de se desafiar com a responsividade, 
