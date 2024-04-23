@@ -1,8 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&display=swap');
+
 *{
     margin: 0%;
     padding: 0%;
 }
 
 :root{
-    --cor-de-fundo:
+    --cor-de-fundo: #DAE7DE;
+    --cor-destaque-1: #C62E65;
+    --cor-destaque-2: #F3A712;
+    --cor-destaque-3: #13507C;
+    --cor-de-link: #000;
+
+    --fonte-titulos: "Roboto Condensed", sans-serif;
+    --fonte-subtitulos: "Days One", sans-serif;
+    --fonte-texto: "Share Tech Mono", monospace;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*Sessão Menu*/
+
+section.menu{
+
+}
+
+/*Sessão Title*/
+
+section.title{
+
+}
+
+/*Sessão About*/
+
+section.about{
+
+}
+
+/*Sessão Hobbies*/
+
+section.hobbies{
+    
+}
+
+/* Experiência Acadêmica*/
+
+section.academic{
+
+}
+
+/* experiência*/
+
+section.experience{
+
+}
+
+/*Contato*/
+
+section.formcontato{
+
+}
+
+/*footeer*/
+
+section.footer{
+   
+}
+
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menu */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Experiências acadêmicas*/
+
+/*Expeirência profissional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sessão sobre*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formação Acadêmica*/
+
+/*Experiência Profissional*/
+
+ /*Contato*/
+
+/*Footer*/
+
 }
