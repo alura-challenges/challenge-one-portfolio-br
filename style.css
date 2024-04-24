@@ -6,15 +6,15 @@
 }
 
 :root{
-    --cor-de-fundo: #DAE7DE;
-    --cor-destaque-1: #C62E65;
-    --cor-destaque-2: #F3A712;
-    --cor-destaque-3: #13507C;
+    --cor-de-fundo: #f8f6e4;
+    --cor-destaque-1: #FF99C8;
+    --cor-destaque-2: #D0F4DE;
+    --cor-destaque-3: #A9DEF9;
     --cor-de-link: #000;
 
-    --fonte-titulos: "Roboto Condensed", sans-serif;
+    /* --fonte-titulos: "Roboto Condensed", sans-serif;
     --fonte-subtitulos: "Days One", sans-serif;
-    --fonte-texto: "Share Tech Mono", monospace;
+    --fonte-texto: "Share Tech Mono", monospace; */
 }
 
 body {
@@ -23,7 +23,7 @@ body {
     font-family: "Share Tech Mono", monospace;
     font-weight: 400;
     font-style: normal;
-    margin: 0;
+    margin: 2% 6%;
     padding: 0;
     line-height: 1;
 }
@@ -40,13 +40,58 @@ a{
 /*Sessão Menu*/
 
 section.menu{
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
 
+.menu__list{
+    font-family: "Days One", sans-serif;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
 }
 
 /*Sessão Title*/
 
 section.title{
+    display: flex;
+    justify-content: center;
+}
 
+.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+img.title__profile{
+    border-radius: 25rem;
+    max-width: 200px;
+    margin-left: 1px;
+}
+
+h2.title__bio{
+    font: 3.5rem "Roboto Condensed", sans-serif;
+}
+
+h3.title__resume{
+    font: 1.5rem "Days One", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.title__network{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+figure.title__network__img{
+    text-align: center;
+}
+
+img.network__img{
+    width: ;
 }
 
 /*Sessão About*/
