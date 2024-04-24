@@ -12,15 +12,15 @@
     --cor-destaque-3: #A9DEF9;
     --cor-de-link: #000;
 
-    /* --fonte-titulos: "Roboto Condensed", sans-serif;
+    --fonte-titulos: "Roboto Condensed", sans-serif;
     --fonte-subtitulos: "Days One", sans-serif;
-    --fonte-texto: "Share Tech Mono", monospace; */
+    --fonte-texto: "Share Tech Mono", monospace;
 }
 
 body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
-    font-family: "Share Tech Mono", monospace;
+    font-family: var(--fonte-texto);
     font-weight: 400;
     font-style: normal;
     margin: 2% 6%;
@@ -46,8 +46,7 @@ section.menu{
 }
 
 .menu__list{
-    font-family: "Days One", sans-serif;
-    font-size: 1.1rem;
+    font: 400 1.3rem var(--fonte-titulos);
     display: flex;
     align-items: baseline;
     gap: 2rem;
@@ -63,20 +62,21 @@ section.title{
 .title__div{
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
 }
 
 img.title__profile{
     border-radius: 25rem;
-    max-width: 200px;
-    margin-left: 1px;
+    max-width: 215px;
+    margin-left: 2rem;
 }
 
 h2.title__bio{
-    font: 3.5rem "Roboto Condensed", sans-serif;
+    font: 300 3rem var(--fonte-titulos);
 }
 
 h3.title__resume{
-    font: 1.5rem "Days One", sans-serif;
+    font: lighter 1.5rem var(--fonte-subtitulos);
     margin-bottom: 1rem;
 }
 
@@ -91,13 +91,17 @@ figure.title__network__img{
 }
 
 img.network__img{
-    width: ;
+    max-width: 60px;
 }
 
 /*Sessão About*/
 
 section.about{
 
+}
+
+h3.about__title{
+    font: 1em sans-serif;
 }
 
 /*Sessão Hobbies*/
