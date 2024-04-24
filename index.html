@@ -12,8 +12,9 @@
     <script src="app.js"></script>
 </head>
 <body>
+       <!-- grid inicio -->
     <div class="all__document">
-
+     
         <section class="menu">
             <nav>
                 <ul class="menu__list">
@@ -33,7 +34,7 @@
                 <img class="title__profile" src="assets/profile-photo.png" alt="Foto de Carla Rodrigues sorrindo, ao fundo há um prédio de tijolos laranja com telhado branco e árvores.">
 
                 <div class="title__container" id="#sobremim">
-                    <h2 class="title__bio">Olá, meu nome é <span>Carla Rodrigues</span> <br> e sou desenvolvedora Front-End</h2>
+                    <h2 class="title__bio">Olá, meu nome é <span class="destaque__span">Carla Rodrigues</span> e sou desenvolvedora Front-End</h2>
                     <h3 class="title__resume">Seja bem vindo ao meu site portfólio!</h3>
 
                     <ul class="title__network">
@@ -91,95 +92,131 @@
         <section class="skills">
             <h3 class="skills__title" id="skills">Skills</h3>
                 <div class="skills__line">
+
                     <div class="skills__box">
                         <ul>
-                            <li class="skills__img"><img src="assets/html-icon.png" alt="Logotipo Html5"></li>
-                            <li class="skills__name">HTML5</li>
+                            <li>
+                                <figure class="skills__itens">
+                                    <img class="skills__img" src="assets/html-icon.png" alt="Logotipo Html5">
+                                    <figcaption class="skills__name">HTML5</figcaption>
+                                </figure>
+                            </li>
                     </div>
 
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets/css-icon.png" alt="Logotipo CSS3"></li>
-                        <li class="skills__name">CSS3</li>
-                </div>
+                    <div class="skills__box">
+                        <ul>
+                            <li>
+                                <figure class="skills__itens">
+                                    <img class="skills__img" src="assets/css-icon.png" alt="Logotipo CSS3">
+                                    <figcaption class="skills__name">CSS3</figcaption>
+                                </figure>
+                            </li>
+                    </div>
 
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets/js-icon.png" alt="Logotipo JavaScript"></li>
-                        <li class="skills__name">JavaScript</li>
-                </div>
+                    <div class="skills__box">
+                        <ul>
+                            <li>
+                                <figure class="skills__itens">
+                                    <img class="skills__img" src="assets/js-icon.png" alt="Logotipo JavaScript">
+                                    <figcaption class="skills__name">JavaScript</figcaption>
+                                </figure>
+                            </li>
+                    </div>
 
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets/office-pack.png" alt="Logotipo pacote office"></li>
-                        <li class="skills__name">Pacote office</li>
-                </div>
+                    <div class="skills__box">
+                        <ul>
+                            <li>
+                                <figure class="skills__itens">
+                                    <img class="skills__img" src="assets/office-pack.png" alt="Logotipo pacote office">
+                                    <figcaption class="skills__name">Pacote office</figcaption>
+                                </figure>
+                            </li>
+                    </div>
 
             </div>
         </section>
 
         <section class="hobbies">
             <h3 class="hobbies__title" id="hobbies">Hobbies</h3>
+
                 <div class="hobbies__line">
-
-                   <div class="hobbies__box">
+                    <div class="hobbies__box">
                         <ul>
-                            <li class="hobbies__img"><img src="assets/bike--icon.png" alt=""></li>
-                            <li class="hobbies__name">Ciclismo</li>
-                        </ul>
-                   </div> 
+                            <li>
+                                <figure class="hobbies__itens">
+                                    <img class="hobbies__img" src="assets/bike--icon.png" alt="">
+                                    <figcaption class="hobbies__name">Ciclismo</figcaption>
+                                </figure>
+                            </li>
+                    </div>
 
-                   <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="assets/art-icon.png" alt=""></li>
-                        <li class="hobbies__name">Artes Manuais</li>
-                    </ul>
-               </div>
+                    <div class="hobbies__box">
+                        <ul>
+                            <li>
+                                <figure class="hobbies__itens">
+                                    <img class="hobbies__img" src="assets/art-icon.png" alt="">
+                                    <figcaption class="hobbies__name">Artes Manuais</figcaption>
+                                </figure>
+                            </li>
+                    </div>
 
-               <div class="hobbies__box">
-                <ul>
-                    <li class="hobbies__img"><img src="assets/plant-icon.png" alt=""></li>
-                    <li class="hobbies__name">Jardinagem</li>
-                </ul>
-                </div>
+                    <div class="hobbies__box">
+                        <ul>
+                            <li>
+                                <figure class="hobbies__itens">
+                                    <img class="hobbies__img" src="assets/plant-icon.png" alt="">
+                                    <figcaption class="hobbies__name">Jardinagem</figcaption>
+                                </figure>
+                            </li>
+                    </div>
 
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="assets/books-lover-icon.png" alt=""></li>
-                        <li class="hobbies__name">Leitura</li>
-                    </ul>
-                </div>
+                    <div class="hobbies__box">
+                        <ul>
+                            <li>
+                                <figure class="hobbies__itens">
+                                    <img class="hobbies__img" src="assets/books-lover-icon.png" alt="">
+                                    <figcaption class="hobbies__name">Leitura</figcaption>
+                                </figure>
+                            </li>
+                    </div>
 
                 </div>
         </section>
 
         <section class="academic">
             <h2 class="academic__title" id="formacao">Formação acadêmica</h2>
+
             <div class="academic__courses">
                 <div class="academic__courses__box">
                     <ul>
-                        <li><img src="assets/alura.png" alt=""></li>
-                        <li>Especialização Front-End</li>
-                        <li>Em andamento - Alura</li>
-                    </ul>
+                        <li>
+                            <figure class="academic__courses--img">
+                                <img class="school__img" src="assets/alura.png" alt="">
+                                <figcaption class="school__name">Especialização Front-End | Em andamento - Alura</figcaption>
+                            </figure>
+                        </li>
                 </div>
 
                 <div class="academic__courses__box">
                     <ul>
-                        <li><img src="assets/udemy.png" alt=""></li>
-                        <li>Design de Interface</li>
-                        <li>Em andamento - Ûdemy</li>
-                    </ul>
-                </div>
+                        <li>
+                            <figure class="academic__courses--img">
+                                <img class="school__img" src="assets/udemy.png" alt="">
+                                <figcaption class="school__name">Design de Interface | Em andamento - Ûdemy</figcaption>
+                            </figure>
+                        </li>
+                    </div>
 
-                <div class="academic__courses__box">
-                    <ul>
-                        <li><img src="assets/sant-open.png" alt=""></li>
-                        <li>Santander Bootcamp 2024 - Criando Jogos com Godot </li>
-                        <li>Em andamento - DIO</li>
-                    </ul>
-                </div>
-            </div>
+                    <div class="academic__courses__box">
+                        <ul>
+                            <li>
+                                <figure class="academic__courses--img">
+                                    <img class="school__img" src="assets/sant-open.png" alt="">
+                                    <figcaption class="school__name">Santander Bootcamp 2024 - Criando Jogos com Godot | Em andamento - DIO</figcaption>
+                                </figure>
+                            </li>
+                        </div>
+
         </section>
 
         <section class="projects">

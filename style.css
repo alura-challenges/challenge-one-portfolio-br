@@ -23,10 +23,13 @@ body {
     font-family: var(--fonte-texto);
     font-weight: 400;
     font-style: normal;
-    margin: 2% 6%;
+    margin: 0;
     padding: 0;
     line-height: 1;
+    max-width: 100%;
 }
+
+
 
 ol, ul,li {
     list-style: none;
@@ -40,7 +43,7 @@ a{
 /*Sessão Menu*/
 
 section.menu{
-    margin: 2rem;
+    margin: 2rem 0;
     display: flex;
     justify-content: space-around;
 }
@@ -55,31 +58,40 @@ section.menu{
 /*Sessão Title*/
 
 section.title{
+    margin-bottom: 2%;
     display: flex;
     justify-content: center;
 }
 
 .title__div{
+    width: 100%;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
     align-items: center;
 }
 
 img.title__profile{
     border-radius: 25rem;
-    max-width: 215px;
+    max-width: 20%;
     margin-left: 2rem;
 }
 
 h2.title__bio{
-    font: 300 3rem var(--fonte-titulos);
+    font: 400 3rem var(--fonte-titulos);
+}
+span.destaque__span{
+    color: var(--cor-destaque-1);
+    border: 0.10rem solid var(--cor-destaque-1);
+    padding: 0.3rem;
 }
 
 h3.title__resume{
     font: lighter 1.5rem var(--fonte-subtitulos);
-    margin-bottom: 1rem;
+    border-top: 0.2rem solid var(--cor-destaque-3);
 }
 
+/* linha de redes sociais e links */
 .title__network{
     display: flex;
     flex-direction: row;
@@ -91,17 +103,58 @@ figure.title__network__img{
 }
 
 img.network__img{
-    max-width: 60px;
+    width: 60px;
+    height: 60px;
 }
 
 /*Sessão About*/
 
 section.about{
+    background-color: var(--cor-destaque-1);
+    width: 100%;
+}
 
+div.about__container{
+    
 }
 
 h3.about__title{
-    font: 1em sans-serif;
+    font: 1.3rem var(--fonte-subtitulos);
+}
+p.about__paragraph{
+    width: 60%;
+}
+
+/* subtitulos config */
+.skills__title, .hobbies__title, .academic__title, .projects__section{
+    text-align: center;
+    font: 300 2rem var(--fonte-titulos);
+}
+
+/* Configurações de figurinhas - skills + hobbies */
+ 
+.skills__line, .hobbies__line{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+figure.skills__itens, .hobbies__itens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+img.skills__img, .hobbies__img{
+    max-width: 60px;
+    max-height: 80px;
+}
+
+/* sessão skills */
+
+section.skills{
+
 }
 
 /*Sessão Hobbies*/
@@ -114,6 +167,13 @@ section.hobbies{
 
 section.academic{
 
+}
+
+.academic__courses{
+    background-color: #fff;
+    display: flex;
+    align-items: end;
+    gap: 1.5rem;
 }
 
 /* experiência*/
