@@ -16,7 +16,7 @@
 
     <div class="all__document">
 
-        <section class="menu">
+        <!-- <section class="menu">
             <nav>
                 <div class="menu__pag">
                     <ul class="menu__list">
@@ -29,16 +29,18 @@
                     </ul>
                 </div>
             </nav>
-        </section>
+        </section> -->
 
     <main>
         <section class="title">
-            <div class="title__div">
-                <img class="title__profile" src="assets/profile-photo.png" alt="Foto de Carla Rodrigues sorrindo, ao fundo há um prédio de tijolos laranja com telhado branco e árvores.">
 
                 <div class="title__container" id="#sobremim">
-                    <h2 class="title__bio">Olá, eu sou <br> <span class="destaque__span">Carla Rodrigues</span>,<br> Desenvolvedora Front-End e Design de Interfaces</h2>
-                    <h3 class="title__resume">Seja bem vindo ao meu site portfólio!</h3> 
+                    <div class="title__bio">
+                        <h2>Olá, eu sou</h2>
+                        <h1 class="name__inTitle"><span>Carla Cristina Rodrigues</span></h1>
+                        <h3>Desenvolvedora Front-End e Design de Interfaces</h3>
+
+                    </div>
 
                     <ul class="title__network">
                         <li class="title__network__item">
@@ -77,9 +79,10 @@
                             </figure>
                         </li>
                     </ul>
+
+                    <img class="title__profile" src="assets/profile-photo.png" alt="Foto de Carla Rodrigues sorrindo, ao fundo há um prédio de tijolos laranja com telhado branco e árvores.">
                 </div>
 
-            </div>
         </section> 
 
         <section class="about">
@@ -191,7 +194,7 @@
 
             <div class="academic__courses">
                 <div class="academic__courses__box">
-                    <ul>
+                    <ul class="academic__list">
                         <li>
                             <figure class="academic__courses--img">
                                 <img class="school__img" src="assets/alura.png" alt="">
@@ -229,7 +232,7 @@
                 <img class="projects__img" src="assets/jogo-numSecreto-prtSc.png">
                 <div class="eprojects__info">
                     <h2 class="projects__title">Jogo do número secreto</h2>
-                    <h3 class="projects__text">O primeiro projeto web que desenvolvi, realizado durante a fase de seleção do Programa ONE. Apesar de ser um projeto bem simples, foi um divisor de águas em minha vida profissional pois vi que era possivel um futuro na área da programação para mim.</h3>
+                    <p class="projects__text">O primeiro projeto web que desenvolvi, realizado durante a fase de seleção do Programa ONE. Apesar de ser um projeto bem simples, foi um divisor de águas em minha vida profissional pois vi que era possivel um futuro na área da programação para mim.</p>
                         <div class="projects__links">
                             <span class="repository__link"><a href="https://github.com/cah-rodrigues/Jogo-do-numero-secreto---ONE" target="_blank"><button>Repositório</button></a></span>
                             <span class="website__link"><a href="https://jogo-do-numero-iota.vercel.app/" target="_blank"><button>Acessar</button></a></span>
@@ -242,8 +245,8 @@
                 <img class="projects__img print2" src="assets/sobremim-portfolio-print.png">
                 <div class="projects__info">
                     <h2 class="projects__title">Portfólio Interativo</h2>
-                    <h3 class="projects__text">Este foi meu primeiro portfólio online. Neste projeto eu quis colocar um pouco da minha personalidade: Uma verdadeira apaixonada por astronomia e super fã de Star Wars. Este projeto em específico foi importante para que eu entendese como aplicar corretamente tudo o que aprendi sobre HTML, CSS e um pouco mais.</h3>
-                    <h3>E algo especial deste projeto: ao entrar na sessão "Sobre mim" e clicar no ícone de ligthsaber minha biografia resumida se transformará num texto espacial flutuante como em Star Wars! Foi necessário muita pesquisa, adaptação de códigos e estudos para fazer funcionar, mas valeu a pena.</h3>
+                    <p class="projects__text">Este foi meu primeiro portfólio online. Neste projeto eu quis colocar um pouco da minha personalidade: Uma verdadeira apaixonada por astronomia e super fã de Star Wars. Este projeto em específico foi importante para que eu entendese como aplicar corretamente tudo o que aprendi sobre HTML, CSS e um pouco mais.</p>
+                    <p class="projects__text">E algo especial deste projeto: ao entrar na sessão "Sobre mim" e clicar no ícone de ligthsaber minha biografia resumida se transformará num texto espacial flutuante como em Star Wars! Foi necessário muita pesquisa, adaptação de códigos e estudos para fazer funcionar, mas valeu a pena.</p>
                         <div class="projects__links">
                             <span class="repository__link"><a href="https://github.com/cah-rodrigues/Portfolio-Carla" target="_blank"><button>Repositório</button></a></span>
                             <span class="website__link"><a href="https://portfolio-carla-eight.vercel.app/" target="_blank"><button>Acessar</button></a></span>
@@ -256,7 +259,7 @@
                 <img class="projects__img print2" src="assets/encriptador-print2.png">
                 <div class="eprojects__info">
                     <h2 class="projects__title">Decodificador de texto</h2>
-                    <h3 class="projects__text">O Challenge Alura Codificador foi de longe o projeto que mais amei fazer até o momento, foi divertido e me ajudou a por em prática os conhecimentos adquiridos como iniciante em programação e lógica de programação.</h3>
+                    <p class="projects__text">O Challenge Alura Codificador foi de longe o projeto que mais amei fazer até o momento, foi divertido e me ajudou a por em prática os conhecimentos adquiridos como iniciante em programação e lógica de programação.</p>
                         <div class="projects__links">
                             <span class="repository__link"><a href="https://github.com/cah-rodrigues/challenge-encriptador-ONE" target="_blank"><button>Repositório</button></a></span>
                             <span class="website__link"><a href="https://challenge-encriptador-one-tau.vercel.app/" target="_blank"><button>Acessar</button></a></span>
@@ -268,7 +271,7 @@
                 <img class="projects__img" src="assets/aluraplay-print.png">
                 <div class="eprojects__info">
                     <h2 class="projects__title">Home Alura Play</h2>
-                    <h3 class="projects__text">Projeto desenvolvido durante curso de JavaScript e GitHub, duas hard skills muito importantes para desenvolvedores web.</h3>
+                    <p class="projects__text">Projeto desenvolvido durante curso de JavaScript e GitHub, duas hard skills muito importantes para desenvolvedores web.</p>
                         <div class="projects__links">
                             <span class="repository__link"><a href="https://github.com/cah-rodrigues/aluraplay" target="_blank"><button>Repositório</button></a></span>
                             <span class="website__link"><a href="https://aluraplay-1dtx8uez6-carla-cristina-m-rodrigues-projects.vercel.app/" target="_blank"><button>Acessar</button></a></span>
@@ -277,7 +280,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <!-- <section class="contact">
             <div class="contact__container" id="contato">
                 <div class="contact__section__img">
                     <img class="contact__img" src="assets/contact_image.png">
@@ -297,7 +300,7 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
     </main>
 
     <footer>
