@@ -19,7 +19,9 @@
     --cor-destaque-7: #FFE5EC;
     --cor-de-texto: #000;
 
-    --hover-botoes: #FB2388;
+    --button-repository-color: #f60073 ;
+    --button-acess-color: #f10a4b;
+    --button-hover: #f2a4cc;
 
     --fonte-titulos: "Roboto Condensed", sans-serif;
     --fonte-subtitulos: "Days One", sans-serif;
@@ -123,6 +125,7 @@ h3.about__title{
     font: bold 1.6rem var(--fonte-titulos);
     color: var(--cor-de-fundo);
     text-indent: 1%;
+    padding: 3% 0 1%;
 }
 
 p.about__paragraph{
@@ -144,6 +147,7 @@ h3.skills__title, .hobbies__title{
     font: normal 1.5rem var(--fonte-titulos);
     text-align: center;
     border-bottom: solid 0.1rem;
+    padding: 3% 0 1%;
 }
 
 div.skills__line, .hobbies__line{
@@ -189,7 +193,7 @@ section.academic{
 h2.academic__title, .projects__section {
     font: normal 1.8rem var(--fonte-titulos);
     text-align: center;
-    border-bottom: solid 0.1rem var(--hover-botoes);
+    border-bottom: solid 0.1rem var(--cor-destaque-1);
     padding: 3% 0 1%;
 }
 
@@ -198,7 +202,7 @@ figure.academic__courses--img{
     width: auto;
     margin: 0.5rem auto;
     padding: 5% 0 2%;
-    border-bottom: dashed 0.1rem var(--hover-botoes)
+    border-bottom: dashed 0.1rem var(--cor-destaque-1);
 }
 
 img.school__img{
@@ -212,13 +216,16 @@ section.projects{
     background-image: linear-gradient(to bottom, #FFC2D1, #fefdf4);
     width: 100vw;
     margin-bottom: 10%;
+    padding: 0 2%;
 }
 
-.projects__box{
+div.projects__box{
     margin: 5% 0;
+    padding-bottom: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: dashed 0.1rem var(--cor-destaque-1);
 }
 
 img.projects__img{
@@ -238,38 +245,43 @@ p.projects__text{
     padding: 2% 3%;
 }
 
+div.projects__links{
+    margin: 0 3%;
+    display: flex;
+    justify-content: space-around;
+}
+/* configurações dos botoes sessão projetos */
 button.repository__button, .acess__button{
-                display: block;
-				padding: 10px 40px;
-				text-decoration: none;
-				font-size: 1rem;
-				position: relative;
-				color: rgb(0, 0, 0);
-				transform: translateX(50%);
-				border-radius: 50px;
-				width: 50%;
-				text-align: center;
-				transition-duration: 0.25s;
+    display: block;
+	padding: 10px 20px;
+    width: 8rem;
+	text-decoration: none;
+	font: bold 90% var(--fonte-texto);
+	position: relative;
+	color: var(--cor-de-fundo);
+	border-radius: 50px;
+	text-align: center;
+	transition-duration: 0.25s;
+    background-color: var();
 
-				&:hover {
-					color: var(--cor-de-fundo);
-                    font-size: 23px;
-				}
+	&:hover {
+        color: var(--cor-de-texto);
+        background-color: var(--button-hover);
+        font-size: 1rem;
+	}
 }
 
 button.repository__button{
-    
+    background-color: var(--button-repository-color);
 }
 
-
-
 button.acess__button{
-    
+    background-color: var(--button-acess-color);
 }
 
 /*Contato*/
 
-section.formcontato{
+section.contact{
 
 }
 
