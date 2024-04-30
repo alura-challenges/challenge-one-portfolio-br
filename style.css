@@ -19,6 +19,8 @@
     --cor-destaque-7: #FFE5EC;
     --cor-de-texto: #000;
 
+    --hover-botoes: #FB2388;
+
     --fonte-titulos: "Roboto Condensed", sans-serif;
     --fonte-subtitulos: "Days One", sans-serif;
     --fonte-texto: "Share Tech Mono", monospace;
@@ -64,19 +66,19 @@ div.title__bio{
     gap: 3%;
 }
 h1.name__inTitle{
-    font: 500 1.8rem var(--fonte-titulos);
+    font: 500 1.9rem var(--fonte-titulos);
     text-align: center;
     color: var(--cor-destaque-1);
     border: 0.10rem solid var(--cor-destaque-1);
     padding: 0.1rem;
 }
 .title__bio h2{
-    font: 300 1.5em var(--fonte-titulos);
+    font: 300 1.7em var(--fonte-titulos);
     text-align: start;
 }
 
 .title__bio h3{
-    font: 1.2rem var(--fonte-titulos);
+    font: 1.5rem var(--fonte-titulos);
     text-align: end;
 }
 
@@ -112,18 +114,20 @@ img.title__profile{
 /*Sessão About*/
 
 section.about{
-    background-color: var(--cor-de-fundo02);
+    background-image: linear-gradient(to bottom,#FB6F92, #fefdf4);
     width: 100vw;
-    margin-bottom: 2%;
+    margin-bottom: 10%;
 }
 
 h3.about__title{
-    font: normal 1.5rem var(--fonte-titulos);
+    font: bold 1.6rem var(--fonte-titulos);
+    color: var(--cor-de-fundo);
     text-indent: 1%;
 }
 
 p.about__paragraph{
-    font: normal 1rem var(--fonte-texto);
+    font: normal 1.1rem var(--fonte-texto);
+    color: var(--cor-de-texto);
     text-indent: 2rem;
     padding: 2% 3%;
 }
@@ -131,14 +135,15 @@ p.about__paragraph{
 /* Skills*/
 section.skills, .hobbies{
     width: 100%;
-    margin: 0;
-    background-color: var(--cor-destaque-3);
+    padding: 0 2%;
+    margin-bottom: 10%;
+    background-image: linear-gradient(to bottom,#FD7F9F, #fefdf4);
 }
 
 h3.skills__title, .hobbies__title{
-    font: lighter 1.5rem var(--fonte-titulos);
+    font: normal 1.5rem var(--fonte-titulos);
     text-align: center;
-    background-color: var(--cor-de-fundo);
+    border-bottom: solid 0.1rem;
 }
 
 div.skills__line, .hobbies__line{
@@ -161,9 +166,14 @@ img.skills__img, .hobbies__img{
 }
 
 /* Hobbies */
+.hobbies{
+    background-image: linear-gradient(to bottom,#FF8FAB, #fefdf4);
+}
+
 .hobbies__line{
     justify-content: center;
 }
+
 .hobbies__itens{
     margin: 0.5rem;
 }
@@ -171,51 +181,90 @@ img.skills__img, .hobbies__img{
 /* Experiência Acadêmica*/
 
 section.academic{
-    
+    margin-bottom: 10%;
+    padding: 0 2%;
+    background-image: linear-gradient(to bottom, #FFB3C6, #fefdf4);
 }
 
-div.academic__courses{
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+h2.academic__title, .projects__section {
+    font: normal 1.8rem var(--fonte-titulos);
+    text-align: center;
+    border-bottom: solid 0.1rem var(--hover-botoes);
+    padding: 3% 0 1%;
 }
 
-ul.academic__list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-figure.academic__couses--img{
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: center;
+figure.academic__courses--img{
+    text-align: center;
+    width: auto;
+    margin: 0.5rem auto;
+    padding: 5% 0 2%;
+    border-bottom: dashed 0.1rem var(--hover-botoes)
 }
 
 img.school__img{
-    width: 80%;
-    gap: 1%;
-}
-
-figcaption.school__name{
-    font: normal 0.9rem var(--fonte-subtitulos);
+    width: 90%;
+    padding-bottom: 2%;
 }
 
 /* Projetos*/
 
 section.projects{
-    font: 0.8rem var(--fonte-texto);
+    background-image: linear-gradient(to bottom, #FFC2D1, #fefdf4);
+    width: 100vw;
+    margin-bottom: 10%;
+}
+
+.projects__box{
+    margin: 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 img.projects__img{
-    max-width: 60vw;
+    max-width: 90%;
+    margin: 2% 0;
+}
+
+h3.projects__title{
+    font: 1.3rem var(--fonte-subtitulos);
+    text-align: center;
 }
 
 p.projects__text{
-    width: 80vw;
-    display: flex;
-    flex-wrap: wrap;
+    font: normal 1.1rem var(--fonte-texto);
+    color: var(--cor-de-texto);
+    text-indent: 2rem;
+    padding: 2% 3%;
+}
+
+button.repository__button, .acess__button{
+                display: block;
+				padding: 10px 40px;
+				text-decoration: none;
+				font-size: 1rem;
+				position: relative;
+				color: rgb(0, 0, 0);
+				transform: translateX(50%);
+				border-radius: 50px;
+				width: 50%;
+				text-align: center;
+				transition-duration: 0.25s;
+
+				&:hover {
+					color: var(--cor-de-fundo);
+                    font-size: 23px;
+				}
+}
+
+button.repository__button{
+    
+}
+
+
+
+button.acess__button{
+    
 }
 
 /*Contato*/
