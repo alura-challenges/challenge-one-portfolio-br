@@ -7,19 +7,21 @@
     <!-- Não esquecer de buscar favicon antes de terminar a página -->
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <!-- folha de estilo css linkado -->
+    <link rel="stylesheet" href="menustyle.css">
     <link rel="stylesheet" href="style.css">
     <!-- JavaScript da página -->
-    <script src="app.js"></script>
     <script src="menu.js"></script>
+    <script src="app.js"></script>
 </head>
 <body>
 
     <div class="all__document">
-
+        <!-- Sessão do Menu -->
         <!-- <section class="menu">
             <nav>
                 <div class="menu__pag">
                     <ul class="menu__list">
+                        <li class="menu__list__item"><a href="#">Home</a></li>
                         <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
                         <li class="menu__list__item"><a href="#skills">Skills</a></li>
                         <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
@@ -32,6 +34,7 @@
         </section> -->
 
     <main>
+        <!-- sessão da página inicial -->
         <section class="title">
 
                 <div class="title__container" id="#sobremim">
@@ -85,12 +88,13 @@
 
         </section> 
 
+        <!-- sessão da autobiografia -->
         <section class="about">
             <div class="about__container">
-                <h3 class="about__title" id="sobremim">Sobre mim - Um pequeno resumo sobre minha vida profissional</h3>
-                    <p class="about__paragraph"> Há puco tempo, incentivada por uma pessoa muito querida em minha vida, descobri a paixão pelo mundo da tecnologia e design web, e, apesar de uma trilha de experiencias diversificadas no mercado de trabalho, como jovem aprendiz em administração e designer de moda na costura sob medida, além de diversos trabalhos autônomos, decidi enfrentar um mundo até então desconhecido para mim e embarquei em uma transição de carreira.</p>
-                    <p class="about__paragraph"> Minha mudança para a área da tecnologia foi motivada por minha paixão por desafios e aprendizado contínuo. Além disso, como voluntária em uma organização sem fins lucrativos, aprendi valiosas lições sobre adaptabilidade e resolução de problemas, e essas habilidades têm sido essenciais para essa nova fase em minha vida. </p>
-                    <p class="about__paragraph">Desde 2023 tenho estudado, pesquisado e me aprofundado nas áreas de Desenvolvimento Front-End e Design de Interfaces. Atualmente estou focada em minha participação como aluna do projeto Oracle ONE na Alura, fazendo parte da Turma 6 desse projeto incrível. Estou entusiasmada para explorar as oportunidades do mundo digital, aproveitando minha determinação e habilidades para contribuir para um futuro inovador na tecnologia.</p>
+                <h3 class="about__title" id="sobremim">Sobre mim</h3>
+                    <p class="about__paragraph">Há puco tempo descobri a paixão pelo mundo da tecnologia e design web, e apesar de uma trilha de experiencias diversificadas no mercado de trabalho, como em administração e designer de moda, decidi enfrentar um mundo até então desconhecido para mim e embarquei em uma transição de carreira para a área da programação.</p>
+                    <p class="about__paragraph">Além disso, atuei por um tempo como voluntária em uma organização sem fins lucrativos, aprendi valiosas lições sobre adaptabilidade e resolução de problemas, e essas habilidades têm sido essenciais para essa nova fase em minha vida. </p>
+                    <p class="about__paragraph">Estou entusiasmada para explorar as oportunidades do mundo digital, aproveitando minha determinação e habilidades para contribuir para um futuro inovador na tecnologia.</p>
                     <p class="about__paragraph">Vamos construir esse futuro juntos?</p>
             </div>
         </section> 
@@ -99,46 +103,51 @@
             <h3 class="skills__title" id="skills">Skills</h3>
                 <div class="skills__line">
 
-                    <div class="skills__box">
-                        <ul>
-                            <li>
-                                <figure class="skills__itens">
-                                    <img class="skills__img" src="assets/html-icon.png" alt="Logotipo Html5">
-                                    <figcaption class="skills__name">HTML5</figcaption>
-                                </figure>
-                            </li>
-                    </div>
+                        <figure class="skills__itens">
+                            <img class="skills__img" src="assets/html.png" alt="Logotipo Html5">
+                            <figcaption class="skills__name">HTML5</figcaption>
+                        </figure>
+                            
+                        <figure class="skills__itens">
+                            <img class="skills__img" src="assets/css.png" alt="Logotipo CSS3">
+                            <figcaption class="skills__name">CSS3</figcaption>
+                        </figure>
+    
+                        <figure class="skills__itens">
+                            <img class="skills__img" src="assets/java-script.png" alt="Logotipo JavaScript">
+                            <figcaption class="skills__name">JavaScript</figcaption>
+                        </figure>
 
-                    <div class="skills__box">
-                        <ul>
-                            <li>
-                                <figure class="skills__itens">
-                                    <img class="skills__img" src="assets/css-icon.png" alt="Logotipo CSS3">
-                                    <figcaption class="skills__name">CSS3</figcaption>
-                                </figure>
-                            </li>
-                    </div>
+                        <figure class="skills__itens">
+                            <img class="skills__img" src="assets/pacote-office.png" alt="Icone de excel representando o pacote office">
+                            <figcaption class="skills__name">Pacote office</figcaption>
+                        </figure>
 
-                    <div class="skills__box">
-                        <ul>
-                            <li>
-                                <figure class="skills__itens">
-                                    <img class="skills__img" src="assets/js-icon.png" alt="Logotipo JavaScript">
-                                    <figcaption class="skills__name">JavaScript</figcaption>
-                                </figure>
-                            </li>
-                    </div>
+                        <figure class="skills__itens">
+                            <img class="skills__img" src="assets/edicao-img.png" alt="icone representando edição de imagens">
+                            <figcaption class="skills__name">Edição de imagens</figcaption>
+                        </figure>
+    
+                        <figure class="skills__itens">
+                            <img class="skills__img" src="assets/ai.png" alt="icone de um pequeno robo representando uma IA">
+                            <figcaption class="skills__name">Prompt'IA</figcaption>
+                        </figure>
 
-                    <div class="skills__box">
-                        <ul>
-                            <li>
-                                <figure class="skills__itens">
-                                    <img class="skills__img" src="assets/office-pack.png" alt="Logotipo pacote office">
-                                    <figcaption class="skills__name">Pacote office</figcaption>
-                                </figure>
-                            </li>
-                    </div>
+                        <figure class="skills__itens">
+                            <img class="skills__img" src="assets/social-media_2.png" alt="icone representando as redes sociais">
+                            <figcaption class="skills__name">Social Media</figcaption>
+                        </figure>
 
+                        <figure class="skills__itens">
+                            <img class="skills__img" src="assets/git.png" alt="Logotipo Git">
+                            <figcaption class="skills__name">Git</figcaption>
+                        </figure>
+
+                        <figure class="skills__itens">
+                            <img class="skills__img" src="assets/react.png" alt="Logotipo React">
+                            <figcaption class="skills__name">React</figcaption>
+                        </figure>
+    
             </div>
         </section>
 
@@ -146,45 +155,27 @@
             <h3 class="hobbies__title" id="hobbies">Hobbies</h3>
 
                 <div class="hobbies__line">
-                    <div class="hobbies__box">
-                        <ul>
-                            <li>
+
                                 <figure class="hobbies__itens">
-                                    <img class="hobbies__img" src="assets/bike--icon.png" alt="">
+                                    <img class="hobbies__img" src="assets/bike--icon.png" alt="icone de bicicleta">
                                     <figcaption class="hobbies__name">Ciclismo</figcaption>
                                 </figure>
-                            </li>
-                    </div>
 
-                    <div class="hobbies__box">
-                        <ul>
-                            <li>
                                 <figure class="hobbies__itens">
-                                    <img class="hobbies__img" src="assets/art-icon.png" alt="">
+                                    <img class="hobbies__img" src="assets/art-icon.png" alt="icone de uma paleta de tinta representando arte">
                                     <figcaption class="hobbies__name">Artes Manuais</figcaption>
                                 </figure>
-                            </li>
-                    </div>
 
-                    <div class="hobbies__box">
-                        <ul>
-                            <li>
                                 <figure class="hobbies__itens">
-                                    <img class="hobbies__img" src="assets/plant-icon.png" alt="">
+                                    <img class="hobbies__img" src="assets/plant-icon.png" alt="icone de um vaso de plantas">
                                     <figcaption class="hobbies__name">Jardinagem</figcaption>
                                 </figure>
-                            </li>
-                    </div>
 
-                    <div class="hobbies__box">
-                        <ul>
-                            <li>
                                 <figure class="hobbies__itens">
-                                    <img class="hobbies__img" src="assets/books-lover-icon.png" alt="">
+                                    <img class="hobbies__img" src="assets/books-lover-icon.png" alt="icone de livros">
                                     <figcaption class="hobbies__name">Leitura</figcaption>
                                 </figure>
-                            </li>
-                    </div>
+
 
                 </div>
         </section>

@@ -9,14 +9,14 @@
 
 :root{
     --cor-de-fundo: #fefdf4;
-    --cor-de-fundo02: #ffd6e9;
-    --cor-destaque-1: #f872b1;
-    --cor-destaque-2: #CDB4DB;
-    --cor-destaque-3: #FFC8DD;
-    --cor-destaque-4: #BDE0FE;
-    --cor-destaque-5: #80d0f9;
-    --cor-destaque-6: #C7D0F9;
-    --cor-destaque-7: #dda5fd;
+    --cor-de-fundo02: #f2d6e3;
+    --cor-destaque-1: #FB6F92;
+    --cor-destaque-2: #FD7F9F;
+    --cor-destaque-3: #FF8FAB;
+    --cor-destaque-4: #FFB3C6;
+    --cor-destaque-5: #FFC2D1;
+    --cor-destaque-6: #FFD4DF;
+    --cor-destaque-7: #FFE5EC;
     --cor-de-texto: #000;
 
     --fonte-titulos: "Roboto Condensed", sans-serif;
@@ -45,22 +45,6 @@ a{
     text-decoration: none;
     color: var(--cor-de-link);
 }
-
-/*Sessão Menu*/
-
-/* section.menu{
-    margin: 2rem 0;
-    display: flex;
-    justify-content: space-around;
-}
-
- .menu__list{
-    font: 400 1.3rem var(--fonte-titulos);
-    display: flex;
-    align-items: baseline;
-    gap: 2rem;
-} */
-
 
 /*Sessão Title*/
 
@@ -101,6 +85,7 @@ ul.title__network{
     order: 3;
     width: 100vw;
     margin: 2% 0;
+    padding: 0 2%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -115,7 +100,6 @@ figure.title__network__img{
 
 img.network__img{
     width: 48%;
-    
 }
 
 img.title__profile{
@@ -129,63 +113,59 @@ img.title__profile{
 
 section.about{
     background-color: var(--cor-de-fundo02);
-    width: 100%;
-}
-
-div.about__container{
-    width: 100%;
-    /* padding: 0 15%; */
+    width: 100vw;
+    margin-bottom: 2%;
 }
 
 h3.about__title{
-    font: 1.5rem var(--fonte-subtitulos);
+    font: normal 1.5rem var(--fonte-titulos);
+    text-indent: 1%;
 }
+
 p.about__paragraph{
-    width: 50%;
-    font-size: 1.2rem;
-    text-indent: 2%;
-    margin: 0.4rem;
+    font: normal 1rem var(--fonte-texto);
+    text-indent: 2rem;
+    padding: 2% 3%;
 }
 
-/* subtitulos config */
-.skills__title, .hobbies__title, .academic__title, .projects__section{
-    text-align: center;
-    font: 300 2rem var(--fonte-titulos);
-}
-
-/* Configurações de figurinhas - skills + hobbies */
- 
-.skills__line, .hobbies__line{
+/* Skills*/
+section.skills, .hobbies{
+    width: 100%;
+    margin: 0;
     background-color: var(--cor-destaque-3);
-    /* width: 100%; */
-    padding: 0 15%;
+}
+
+h3.skills__title, .hobbies__title{
+    font: lighter 1.5rem var(--fonte-titulos);
+    text-align: center;
+    background-color: var(--cor-de-fundo);
+}
+
+div.skills__line, .hobbies__line{
+    margin: 2%;
+    padding: 0 2%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: baseline;
 }
 
 figure.skills__itens, .hobbies__itens{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
+    text-align: center;
+    width: min-content;
+    margin: 0.5rem auto;
 }
 
 img.skills__img, .hobbies__img{
-    max-width: 60px;
-    max-height: 80px;
+    width: 5rem;
 }
 
-/* sessão skills */
-
-section.skills{
-
+/* Hobbies */
+.hobbies__line{
+    justify-content: center;
 }
-
-/*Sessão Hobbies*/
-
-section.hobbies{
-    
+.hobbies__itens{
+    margin: 0.5rem;
 }
 
 /* Experiência Acadêmica*/
