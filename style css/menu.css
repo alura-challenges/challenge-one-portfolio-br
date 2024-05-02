@@ -1,9 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400);
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 
 
 :root{
 	--cor-de-fundo: #fefdf4;
     --cor-de-fundo02: #f2d6e3;
+
     --cor-destaque-1: #FB6F92;
     --cor-destaque-2: #FD7F9F;
     --cor-destaque-3: #FF8FAB;
@@ -29,138 +37,190 @@
 }
 
 body {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: var(--fonte-titulos);
 	background-color: var(--cor-de-fundo);
 }
 
-nav {
+/* Style the navigation menu */
+div.nav__mobile {
+	overflow: hidden;
+	background-color: var(--cor-de-fundo02);
+	position: relative;
+	width: 100vw;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .nav__mobile  #menu__hamburguer {
+	display: none;
+  }
+  
+  /* Style navigation menu links */
+  .nav__mobile a {
+	color: var(--cor-de-texto);
+	padding: 0.8rem;
+	text-decoration: none;
+	font-size: 1rem;
+	display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .material-symbols-outlined {
+	/* background: black; */
+	display: block;
 	position: fixed;
-	top: 5%;
-	left: 50%;
-	width: 100%;
-	text-align: center;
+	top: 0;
+	right: 5;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .nav__mobile a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  a.home__logo {
+	background-color: var(--cor-destaque-4);
+  }
 
-	transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
+  img.logo{
+	max-width: 5rem;
+  }
 
-	&:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
+ 
 
-	ul {
-		li {
-			list-style: none;
-			display: inline-block;
-			oveflow: hidden;
+/* Menu desktop */
+@media screen and (min-width: 1024px ) {
 
-			a {
-				display: block;
-				padding: 10px 40px;
-				text-decoration: none;
-				font-size: 18px;
-				position: relative;
-				color: gray;
-				transform: translateX(-15%);
-				border-radius: 50px;
-				width: 130%;
-				text-align: center;
-				transition-duration: 0.25s;
+	@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400);
 
-				&:hover {
-					color: var(--cor-de-fundo);
-                    font-size: 23px;
-				}
-			}
-
-			&.active {
+	nav {
+		position: fixed;
+		top: 5%;
+		left: 50%;
+		width: 100%;
+		text-align: center;
+	
+		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+	
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	
+		ul {
+			li {
+				list-style: none;
+				display: inline-block;
+				oveflow: hidden;
+	
 				a {
-					color: black;
+					display: block;
+					padding: 10px 40px;
+					text-decoration: none;
+					font-size: 18px;
+					position: relative;
+					color: gray;
+					transform: translateX(-15%);
+					border-radius: 50px;
+					width: 130%;
+					text-align: center;
+					transition-duration: 0.25s;
+	
+					&:hover {
+						color: var(--cor-de-fundo);
+						font-size: 23px;
+					}
 				}
-			}
-
-			&:nth-child(1) {
-				a {
-					background-color: var(--cor-destaque-1);
+	
+				&.active {
+					a {
+						color: black;
+					}
 				}
-                :hover{
-                    background-color: var(--cor-hover-1);
-					
-                }
-			}
-
-			&:nth-child(2n) {
-				a {
-					background-color: var(--cor-destaque-2);
+	
+				&:nth-child(1) {
+					a {
+						background-color: var(--cor-destaque-1);
+					}
+					:hover{
+						background-color: var(--cor-hover-1);
+						
+					}
 				}
-                :hover{
-                    background-color: var(--cor-hover-1);
-					
-                }
-			}
-
-			&:nth-child(3n) {
-				a {
-					background-color: var(--cor-destaque-3);
+	
+				&:nth-child(2n) {
+					a {
+						background-color: var(--cor-destaque-2);
+					}
+					:hover{
+						background-color: var(--cor-hover-1);
+						
+					}
 				}
-                :hover{
-                    background-color: var(--cor-hover-1);
-					
-                }
-			}
-
-			&:nth-child(4n) {
-				a {
-					background-color: var(--cor-destaque-4);
+	
+				&:nth-child(3n) {
+					a {
+						background-color: var(--cor-destaque-3);
+					}
+					:hover{
+						background-color: var(--cor-hover-1);
+						
+					}
 				}
-                :hover{
-                    background-color: var(--cor-hover-1);
-                }
-			}
-
-			&:nth-child(5n) {
-				a {
-					background-color: var(--cor-destaque-5);
+	
+				&:nth-child(4n) {
+					a {
+						background-color: var(--cor-destaque-4);
+					}
+					:hover{
+						background-color: var(--cor-hover-1);
+					}
 				}
-                :hover{
-                    background-color: var(--cor-hover-1);
-                }
-			}
-
-			&:nth-child(6n) {
-				a {
-					background-color: var(--cor-destaque-6);
+	
+				&:nth-child(5n) {
+					a {
+						background-color: var(--cor-destaque-5);
+					}
+					:hover{
+						background-color: var(--cor-hover-1);
+					}
 				}
-                :hover{
-                    background-color: var(--cor-hover-1);
-                }
-			}
-
-            &:nth-child(7n) {
-				a {
-					background-color: var(--cor-destaque-7);
+	
+				&:nth-child(6n) {
+					a {
+						background-color: var(--cor-destaque-6);
+					}
+					:hover{
+						background-color: var(--cor-hover-1);
+					}
 				}
-                :hover{
-                    background-color: var(--cor-hover-1);
-                }
-			}
-
-			.menu__pag {
-				background-color: red;
-				width: 6px;
-				height: 6px;
-				position: absolute;
-				bottom: -20px;
-				left: 0;
-				border-radius: 50%;
-				transition-duration: 0.5s;
+	
+				&:nth-child(7n) {
+					a {
+						background-color: var(--cor-destaque-7);
+					}
+					:hover{
+						background-color: var(--cor-hover-1);
+					}
+				}
+	
+				.menu__pag {
+					background-color: red;
+					width: 6px;
+					height: 6px;
+					position: absolute;
+					bottom: -20px;
+					left: 0;
+					border-radius: 50%;
+					transition-duration: 0.5s;
+				}
 			}
 		}
 	}
 }
-
-/* Menu mobile */
 
 
 

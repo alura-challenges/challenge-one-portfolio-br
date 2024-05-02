@@ -9,16 +9,10 @@
     <!-- folha de estilo css linkado -->
     <link rel="stylesheet" href="style css/style.css">
     <link rel="stylesheet" href="style css/menu.css">
-    <link rel="stylesheet" href="style css/title.css">
-    <link rel="stylesheet" href="style css/about.css">
-    <link rel="stylesheet" href="style css/skills+hobbies.css">
-    <link rel="stylesheet" href="style css/academic.css">
-    <link rel="stylesheet" href="style css/projects.css">
-    <link rel="stylesheet" href="style css/contact.css">
-    <link rel="stylesheet" href="style css/footer.css">
 
     <!-- hamburguer menu icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- JavaScript da página -->
     <script src="menu.js"></script>
 </head>
@@ -28,22 +22,23 @@
 
 
         <!-- Menu Mobile -->
-        <div class="nav__mobile"></div>
-            <!-- home com as redes sociais -->
-                <a href="#home" class="home__index"><img src="assets/icone-pr.png"></a>
-            <!-- links de navegaçao -->
-            <div id="paginas">
-                <a href="#sobremim">Sobre mim</a>
-                <a href="#skills">Skills</a>
-                <a href="#hobbies">Hobbies</a>
-                <a href="#formacao">Formação Acadêmica</a>
-                <a href="#projDev">Projetos</a>
-                <a href="#contato">Contato</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>></a>
-
-            </div>
+        <nav>
+            <div class="nav__mobile">
+                <!-- home com as redes sociais -->
+                <a href="#home" class="home__logo">
+                    <img src="assets/logo-CR.png" alt="Logotipo de Carla Rodrigues em RGB" class="logo"></a>
+                <!-- links de navegaçao -->
+                <ul id="menu__hamburguer">
+                    <li><a href="#sobremim">Sobre mim</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#formacao">Formação Acadêmica</a></li>
+                    <li><a href="#projDev">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <span class="material-symbols-outlined">Menu</span>
+                </div>
+        </nav>
 
 
         <!-- Sessão do Menu -->

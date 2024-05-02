@@ -50,6 +50,329 @@ a{
     color: var(--cor-de-link);
 }
 
+/*Sessão Title*/
+
+section.title{
+    margin: 2% 0;
+}
+
+div.title__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.title__bio{
+    margin: 1% 2%;
+    gap: 3%;
+}
+h1.name__inTitle{
+    font: 500 1.9rem var(--fonte-titulos);
+    text-align: center;
+    color: var(--cor-destaque-1);
+    border: 0.10rem solid var(--cor-destaque-1);
+    padding: 0.1rem;
+}
+.title__bio h2{
+    font: 300 1.7em var(--fonte-titulos);
+    text-align: start;
+}
+
+.title__bio h3{
+    font: 1.5rem var(--fonte-titulos);
+    text-align: end;
+}
+
+/* linha de redes sociais e links */
+ul.title__network{
+    order: 3;
+    width: 100vw;
+    margin: 2% 0;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 2%;
+}
+
+figure.title__network__img{
+    font: 0.8rem var(--fonte-subtitulos);
+    text-align: center;
+}
+
+img.network__img{
+    width: 48%;
+}
+
+img.title__profile{
+    order: 2;
+    border-radius: 25rem;
+    max-width: 50%;
+    margin: 3% 0;
+    border: dotted var(--cor-destaque-1);
+}
+
+/*Sessão About*/
+
+section.about{
+    background-image: linear-gradient(to bottom,#FB6F92, #fefdf4);
+    width: 100vw;
+    margin-bottom: 25%;
+}
+
+h3.about__title{
+    font: bold 1.8rem var(--fonte-titulos);
+    color: var(--cor-de-fundo);
+    text-indent: 1%;
+    padding: 3% 0 1%;
+}
+
+p.about__paragraph{
+    font: normal 1.1rem var(--fonte-texto);
+    color: var(--cor-de-texto);
+    text-indent: 2rem;
+    margin: 5% 7%;
+}
+
+/* Skills*/
+section.skills, .hobbies{
+    width: 100%;
+    padding: 0 2%;
+    margin-bottom: 25%;
+    background-image: linear-gradient(to bottom,#FD7F9F, #fefdf4);
+}
+
+h3.skills__title, .hobbies__title{
+    font: normal 1.8rem var(--fonte-titulos);
+    text-align: center;
+    border-bottom: solid 0.1rem;
+    padding: 3% 0 1%;
+}
+
+div.skills__line, .hobbies__line{
+    margin: 2%;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: baseline;
+}
+
+figure.skills__itens, .hobbies__itens{
+    text-align: center;
+    width: min-content;
+    margin: 0.5rem auto;
+}
+
+img.skills__img, .hobbies__img{
+    width: 5rem;
+}
+
+/* Hobbies */
+.hobbies{
+    background-image: linear-gradient(to bottom,#FF8FAB, #fefdf4);
+}
+
+.hobbies__line{
+    justify-content: center;
+}
+
+.hobbies__itens{
+    margin: 0.5rem;
+}
+
+/* Experiência Acadêmica*/
+
+section.academic{
+    margin-bottom: 25%;
+    padding: 0 2%;
+    background-image: linear-gradient(to bottom, #FFB3C6, #fefdf4);
+}
+
+h2.academic__title, .projects__section {
+    font: normal 1.8rem var(--fonte-titulos);
+    text-align: center;
+    border-bottom: solid 0.1rem var(--cor-destaque-1);
+    padding: 3% 0 1%;
+}
+
+figure.academic__courses--img{
+    text-align: center;
+    width: auto;
+    margin: 0.5rem auto;
+    padding: 5% 0 2%;
+    border-bottom: dashed 0.1rem var(--cor-destaque-1);
+}
+
+figcaption.school__name{
+    font: 1.2rem var(--fonte-texto);
+}
+
+img.school__img{
+    width: 90%;
+    padding-bottom: 2%;
+}
+
+
+
+/* Projetos*/
+
+section.projects{
+    background-image: linear-gradient(to bottom, #FFC2D1, #fefdf4);
+    width: 100vw;
+    margin-bottom: 10%;
+    padding: 0 2%;
+}
+
+div.projects__box{
+    margin: 5% 0;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: dashed 0.1rem var(--cor-destaque-1);
+}
+
+img.projects__img{
+    max-width: 90%;
+    margin: 2% 0;
+}
+
+h3.projects__title{
+    font: 1.3rem var(--fonte-subtitulos);
+    padding: 3% 0 1%;
+    text-align: center;
+}
+
+p.projects__text{
+    font: normal 1.2rem var(--fonte-texto);
+    color: var(--cor-de-texto);
+    text-indent: 1rem;
+    margin: 5% 7%;
+}
+
+div.projects__links{
+    margin: 1rem 1rem 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* configurações dos botoes sessão projetos */
+button.repository__button, .acess__button{
+    display: block;
+	padding: 10px 20px;
+    width: 8rem;
+	text-decoration: none;
+	font: bold 90% var(--fonte-texto);
+	position: relative;
+	color: var(--cor-de-fundo);
+	border-radius: 50px;
+	text-align: center;
+	transition-duration: 0.25s;
+    background-color: var();
+
+	&:hover {
+        color: var(--cor-de-texto);
+        background-color: var(--button-hover);
+        font-size: 1rem;
+	}
+}
+
+button.repository__button{
+    background-color: var(--button-repository-color);
+}
+
+button.acess__button{
+    background-color: var(--button-acess-color);
+}
+
+/*Contato*/
+
+section.contact{
+    margin-bottom: 25%;
+}
+
+div.contact__section__img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2.contact__title{
+    font: normal 1.6rem var(--fonte-titulos);
+    color: var(--cor-de-texto);
+    text-align: center;
+    padding: 3% 0 5%;
+}
+
+img.contact__img{
+    width: 88%;
+}
+
+.contact__text{
+    margin: 5% 7%;
+}
+
+.contact__text h3{
+    font: 1.2rem var(--fonte-subtitulos);
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.contact__text p {
+    font-size: 1.1rem;
+    text-indent: 1rem;
+}
+
+form.contact__form{
+    margin: 0 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formcontato__input, .formcontato__textarea{
+    width: 99%;
+    margin: 1.5rem 0 0 0;
+    padding: 1rem;
+}
+
+button.formcontato__botao{
+    display: block;
+	padding: 1rem 2rem;
+    width: 14rem;
+	text-decoration: none;
+	font: bold 1.1rem var(--fonte-texto);
+	position: relative;
+	color: var(--cor-de-fundo);
+	border-radius: 50px;
+	text-align: center;
+	transition-duration: 0.25s;
+    background-color: var(--cor-destaque-1);
+    margin: 8%;
+
+	&:hover {
+        background-color: #0a91f1;
+        font-size: 1rem;
+	}
+}
+
+/*footeer*/
+
+section.footer{
+    margin: 2% ;
+}
+
+div.footer__rodape{
+    padding: 2% 3%;
+    text-align: center;
+    font: 0.7rem sans-serif;
+    color: var(--cor-de-fundo);
+    background-color: var(--button-acess-color);
+}
+
 
 
 @media (min-width: 768px) {
