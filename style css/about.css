@@ -1,0 +1,21 @@
+/*Sessão About*/
+
+section.about{
+    background-image: linear-gradient(to bottom,#FB6F92, #fefdf4);
+    width: 100vw;
+    margin-bottom: 25%;
+}
+
+h3.about__title{
+    font: bold 1.8rem var(--fonte-titulos);
+    color: var(--cor-de-fundo);
+    text-indent: 1%;
+    padding: 3% 0 1%;
+}
+
+p.about__paragraph{
+    font: normal 1.1rem var(--fonte-texto);
+    color: var(--cor-de-texto);
+    text-indent: 2rem;
+    margin: 5% 7%;
+}

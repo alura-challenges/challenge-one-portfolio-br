@@ -1,0 +1,70 @@
+/*Contato*/
+
+section.contact{
+    margin-bottom: 25%;
+}
+
+div.contact__section__img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2.contact__title{
+    font: normal 1.6rem var(--fonte-titulos);
+    color: var(--cor-de-texto);
+    text-align: center;
+    padding: 3% 0 5%;
+}
+
+img.contact__img{
+    width: 88%;
+}
+
+.contact__text{
+    margin: 5% 7%;
+}
+
+.contact__text h3{
+    font: 1.2rem var(--fonte-subtitulos);
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.contact__text p {
+    font-size: 1.1rem;
+    text-indent: 1rem;
+}
+
+form.contact__form{
+    margin: 0 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formcontato__input, .formcontato__textarea{
+    width: 99%;
+    margin: 1.5rem 0 0 0;
+    padding: 1rem;
+}
+
+button.formcontato__botao{
+    display: block;
+	padding: 1rem 2rem;
+    width: 14rem;
+	text-decoration: none;
+	font: bold 1.1rem var(--fonte-texto);
+	position: relative;
+	color: var(--cor-de-fundo);
+	border-radius: 50px;
+	text-align: center;
+	transition-duration: 0.25s;
+    background-color: var(--cor-destaque-1);
+    margin: 8%;
+
+	&:hover {
+        background-color: #0a91f1;
+        font-size: 1rem;
+	}
+}

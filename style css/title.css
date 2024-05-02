@@ -1,0 +1,63 @@
+/*Sessão Title*/
+
+section.title{
+    margin: 2% 0;
+}
+
+div.title__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.title__bio{
+    margin: 1% 2%;
+    gap: 3%;
+}
+h1.name__inTitle{
+    font: 500 1.9rem var(--fonte-titulos);
+    text-align: center;
+    color: var(--cor-destaque-1);
+    border: 0.10rem solid var(--cor-destaque-1);
+    padding: 0.1rem;
+}
+.title__bio h2{
+    font: 300 1.7em var(--fonte-titulos);
+    text-align: start;
+}
+
+.title__bio h3{
+    font: 1.5rem var(--fonte-titulos);
+    text-align: end;
+}
+
+/* linha de redes sociais e links */
+ul.title__network{
+    order: 3;
+    width: 100vw;
+    margin: 2% 0;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 2%;
+}
+
+figure.title__network__img{
+    font: 0.8rem var(--fonte-subtitulos);
+    text-align: center;
+}
+
+img.network__img{
+    width: 48%;
+}
+
+img.title__profile{
+    order: 2;
+    border-radius: 25rem;
+    max-width: 50%;
+    margin: 3% 0;
+    border: dotted var(--cor-destaque-1);
+}

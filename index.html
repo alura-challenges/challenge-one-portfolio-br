@@ -7,21 +7,51 @@
     <!-- Não esquecer de buscar favicon antes de terminar a página -->
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <!-- folha de estilo css linkado -->
-    <link rel="stylesheet" href="menustyle.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style css/style.css">
+    <link rel="stylesheet" href="style css/menu.css">
+    <link rel="stylesheet" href="style css/title.css">
+    <link rel="stylesheet" href="style css/about.css">
+    <link rel="stylesheet" href="style css/skills+hobbies.css">
+    <link rel="stylesheet" href="style css/academic.css">
+    <link rel="stylesheet" href="style css/projects.css">
+    <link rel="stylesheet" href="style css/contact.css">
+    <link rel="stylesheet" href="style css/footer.css">
+
+    <!-- hamburguer menu icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- JavaScript da página -->
     <script src="menu.js"></script>
-    <script src="app.js"></script>
 </head>
 <body>
 
     <div class="all__document">
+
+
+        <!-- Menu Mobile -->
+        <div class="nav__mobile"></div>
+            <!-- home com as redes sociais -->
+                <a href="#home" class="home__index"><img src="assets/icone-pr.png"></a>
+            <!-- links de navegaçao -->
+            <div id="paginas">
+                <a href="#sobremim">Sobre mim</a>
+                <a href="#skills">Skills</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#formacao">Formação Acadêmica</a>
+                <a href="#projDev">Projetos</a>
+                <a href="#contato">Contato</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>></a>
+
+            </div>
+
+
         <!-- Sessão do Menu -->
         <!-- <section class="menu">
             <nav>
                 <div class="menu__pag">
                     <ul class="menu__list">
-                        <li class="menu__list__item"><a href="#">Home</a></li>
+                        <li class="menu__list__item"><a href="#home">Home</a></li>
                         <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
                         <li class="menu__list__item"><a href="#skills">Skills</a></li>
                         <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
@@ -37,7 +67,7 @@
         <!-- sessão da página inicial -->
         <section class="title">
 
-                <div class="title__container" id="#sobremim">
+                <div class="title__container" id="home">
                     <div class="title__bio">
                         <h2>Olá, eu sou</h2>
                         <h1 class="name__inTitle"><span>Carla Cristina Rodrigues</span></h1>
@@ -212,7 +242,7 @@
                     <p class="projects__text">O primeiro projeto web que desenvolvi, realizado durante a fase de seleção do Programa ONE.</p>
                         <div class="projects__links">
 
-                            <a href="https://github.com/cah-rodrigues/Jogo-do-numero-secreto---ONE">
+                            <a href="https://github.com/cah-rodrigues/Jogo-do-numero-secreto---ONE" target="_blank">
                                 <button class="repository__button">
                                 Repositório</button>
                             </a>
@@ -282,18 +312,24 @@
         <section class="contact">
             <div class="contact__container" id="contato">
                 <div class="contact__section__img">
-                    <img class="contact__img" src="">
+                    <h2 class="contact__title">Contato</h2>
+                    <img class="contact__img" src="assets/contactimg.jpg">
                 </div>
 
                 <div class="contact__text">
-                    <h2>Contato</h2>
+                    
                     <h3>Quer entrar em contato comigo?</h3>
-                    <h3>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</h3>
+                    <p>Preencha o formulário e entrarei em contato com você o mais rápido possível.</p>
+
                     <form class="contact__form">
                         <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
+
                         <input class="formcontato__input" type="email" id="email" placeholder="Email">
+
                         <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
+
                         <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
+
                         <button class="formcontato__botao">Enviar mensagem</button>
                     </form>
                 </div>
@@ -304,8 +340,8 @@
 
     <footer>
         <div class="footer__rodape">
-            <p>Desenvolvido por Carla Rodrigues</p>
-            <p>2024</p>
+            <p>Desenvolvido por Carla Cristina M. Rodrigues-2024</p>
+            <p>Imagens de <a href="https://br.freepik.com/">Freepik</a></p>
         </div>
     </footer>
 

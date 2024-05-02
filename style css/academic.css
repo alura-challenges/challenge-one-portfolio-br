@@ -1,0 +1,31 @@
+/* Experiência Acadêmica*/
+
+section.academic{
+    margin-bottom: 25%;
+    padding: 0 2%;
+    background-image: linear-gradient(to bottom, #FFB3C6, #fefdf4);
+}
+
+h2.academic__title, .projects__section {
+    font: normal 1.8rem var(--fonte-titulos);
+    text-align: center;
+    border-bottom: solid 0.1rem var(--cor-destaque-1);
+    padding: 3% 0 1%;
+}
+
+figure.academic__courses--img{
+    text-align: center;
+    width: auto;
+    margin: 0.5rem auto;
+    padding: 5% 0 2%;
+    border-bottom: dashed 0.1rem var(--cor-destaque-1);
+}
+
+figcaption.school__name{
+    font: 1.2rem var(--fonte-texto);
+}
+
+img.school__img{
+    width: 90%;
+    padding-bottom: 2%;
+}

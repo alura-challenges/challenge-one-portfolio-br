@@ -2,8 +2,8 @@
 
 
 :root{
-    --cor-de-fundo: #fefdf4;
-    --cor-de-fundo02: #ffd6e9;
+	--cor-de-fundo: #fefdf4;
+    --cor-de-fundo02: #f2d6e3;
     --cor-destaque-1: #FB6F92;
     --cor-destaque-2: #FD7F9F;
     --cor-destaque-3: #FF8FAB;
@@ -11,12 +11,11 @@
     --cor-destaque-5: #FFC2D1;
     --cor-destaque-6: #FFD4DF;
     --cor-destaque-7: #FFE5EC;
-    --cor-de-texto: gray;
+    --cor-de-texto: #000;
 
-    
-    --cor-hover-1: #FB2388;
-    --cor-de-texto-hover: #faf7e1;
-
+    --button-repository-color: #f60073 ;
+    --button-acess-color: #f10a4b;
+    --button-hover: #f2a4cc;
 
     --fonte-titulos: "Roboto Condensed", sans-serif;
     --fonte-subtitulos: "Days One", sans-serif;
@@ -162,8 +161,8 @@ nav {
 }
 
 /* Menu mobile */
-@media (min-width: 320px) and (max-width: 480px){
 
 
 
-}
+
+

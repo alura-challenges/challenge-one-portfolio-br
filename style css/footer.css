@@ -1,0 +1,13 @@
+/*footeer*/
+
+section.footer{
+    margin: 2% ;
+}
+
+div.footer__rodape{
+    padding: 2% 3%;
+    text-align: center;
+    font: 0.7rem sans-serif;
+    color: var(--cor-de-fundo);
+    background-color: var(--button-acess-color);
+}
