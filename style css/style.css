@@ -33,6 +33,9 @@ body {
     font-family: var(--fonte-texto);
     font-weight: 400;
     font-style: normal;
+}
+
+body .all__document {
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -50,13 +53,26 @@ a{
     color: var(--cor-de-link);
 }
 
-/*Sessão Title*/
-
-section.title{
-    margin: 2% 0;
+/* Sessão do menu */
+nav.menu__bar{
+    display: none;
 }
 
-div.title__container{
+
+
+
+
+/*Sessão Title*/
+section.title{
+    margin: 10% 0 2%;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.social__profile{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,14 +103,18 @@ h1.name__inTitle{
 /* linha de redes sociais e links */
 ul.title__network{
     order: 3;
-    width: 100vw;
-    margin: 2% 0;
+    margin: 2%;
     padding: 0 2%;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     align-items: baseline;
-    gap: 2%;
+}
+
+.title__network li{
+    margin: 0.2rem;
+    text-align: center;
 }
 
 figure.title__network__img{
@@ -103,14 +123,14 @@ figure.title__network__img{
 }
 
 img.network__img{
-    width: 48%;
+    width: 3.2rem;
 }
 
 img.title__profile{
     order: 2;
     border-radius: 25rem;
-    max-width: 50%;
-    margin: 3% 0;
+    max-width: 55%;
+    margin: 3% 0 5%;
     border: dotted var(--cor-destaque-1);
 }
 
@@ -138,7 +158,7 @@ p.about__paragraph{
 
 /* Skills*/
 section.skills, .hobbies{
-    width: 100%;
+    width: 100vw;
     padding: 0 2%;
     margin-bottom: 25%;
     background-image: linear-gradient(to bottom,#FD7F9F, #fefdf4);
@@ -186,6 +206,7 @@ img.skills__img, .hobbies__img{
 /* Experiência Acadêmica*/
 
 section.academic{
+    width: 100vw;
     margin-bottom: 25%;
     padding: 0 2%;
     background-image: linear-gradient(to bottom, #FFB3C6, #fefdf4);
@@ -200,18 +221,18 @@ h2.academic__title, .projects__section {
 
 figure.academic__courses--img{
     text-align: center;
-    width: auto;
+    width: 90vw;
     margin: 0.5rem auto;
     padding: 5% 0 2%;
     border-bottom: dashed 0.1rem var(--cor-destaque-1);
 }
 
 figcaption.school__name{
-    font: 1.2rem var(--fonte-texto);
+    font: 1rem var(--fonte-texto);
 }
 
 img.school__img{
-    width: 90%;
+    width: 90vw;
     padding-bottom: 2%;
 }
 
@@ -240,6 +261,12 @@ img.projects__img{
     margin: 2% 0;
 }
 
+div.imgs__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h3.projects__title{
     font: 1.3rem var(--fonte-subtitulos);
     padding: 3% 0 1%;
@@ -256,7 +283,8 @@ p.projects__text{
 div.projects__links{
     margin: 1rem 1rem 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 1rem;
 }
 
 /* configurações dos botoes sessão projetos */
@@ -265,13 +293,12 @@ button.repository__button, .acess__button{
 	padding: 10px 20px;
     width: 8rem;
 	text-decoration: none;
-	font: bold 90% var(--fonte-texto);
+	font: bold 0.8rem var(--fonte-subtitulos);
 	position: relative;
 	color: var(--cor-de-fundo);
 	border-radius: 50px;
 	text-align: center;
 	transition-duration: 0.25s;
-    background-color: var();
 
 	&:hover {
         color: var(--cor-de-texto);
@@ -291,7 +318,8 @@ button.acess__button{
 /*Contato*/
 
 section.contact{
-    margin-bottom: 25%;
+    width: 100vw;
+    margin-bottom: 5%;
 }
 
 div.contact__section__img{
@@ -375,6 +403,251 @@ div.footer__rodape{
 
 
 
-@media (min-width: 768px) {
+
+/* Tablets------------------------------------------ */
+@media screen and (min-width: 600px){
+    /* titulo principal */
+    .title__bio h2{
+        font-size: 2rem;
+    }
+    .title__bio h1{
+        font-size: 2.3rem;
+    }
+
+/* Foto e redes sociais */
+    div.social__profile{
+        flex-direction: row-reverse;
+    }
+
+    img.title__profile{
+        max-width: 30%;
+        margin: 3% 5% ;
+    }
+
+    ul.title__network{
+        max-width: 35%;
+    }
+
+    img.network__img{
+        width: 6rem;
+    }
+
+    /* Sobre mim */
+    section.about{
+        margin-bottom: 15%;
+    }
+
+    p.about__paragraph{
+        margin: 3%;
+    }
+
+    /* Skills e hobbies */
+    section.skills, .hobbies{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8%;
+    }
+
+    h3.skills__title, .hobbies__title{
+        border: none;
+        align-self: flex-start;
+    }
+
+    div.skills__line, .hobbies__line{
+        width: 75%;
+        align-items: baseline;
+    }
+
+    img.skills__img, .hobbies__img{
+        width: 6rem;
+    }
+
+    figcaption.skills__name, .hobbies__name{
+        font-size: 1rem;
+    }
+
+    /* formação academica */
+    h2.academic__title{
+        text-align: start;
+    }
+
+    div.academic__courses{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    img.school__img{
+        width: 10rem;
+    }
+
+
+    /* formação academica */
+    section.academic{
+        margin: 8% 0 10%;
+    }
+
+    div.academic__courses{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    /* projetos */
+    section.projects{
+        margin-bottom: 8%;
+    }
+    
+    h2.projects__section{
+        text-align: start;
+    }
+
+    div.projects__box{
+        margin: 2% 5%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+    }
+
+    div.imgs__box{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    img.projects__img{
+        width: 26rem;
+    }
+
+    div.projects__info{
+        width: 45%;
+        margin-left: 2%;
+    }
+    p.projects__text{
+        font-size: 1rem;
+    }
+
+    button.repository__button, .acess__button{
+        width: 7.5rem;
+        text-align: center;
+        font: 0.8rem var(--fonte-subtitulos);
+        margin-right: 0.5rem;
+    }
+
+    /* contato */
+    h2.contact__title{
+        padding: 2% 0;
+        border: solid 0.1rem var(--cor-destaque-1);
+    }
+
+   div#contato.contact__container{
+    display: flex;
+    justify-content: center;
+    padding: 0 2%;
+   }
+
+   div.contact__section__img{
+    width: 50%;
+   }
+
+   img.contact__img{
+    width: 26rem;
+    height: 24rem;
+   }
+
+   div.contact__text{
+     margin: 2%;
+     width: 50%;
+     height: 25rem;
+   }
+
+   form.contact__form {
+     height: 70%;
+   }
+
+   input.formcontato__input{
+     width: 90%;
+     padding: 0.5rem;
+     margin-top: 1rem;
+   }
+   .formcontato__textarea{
+     width: 90%;
+     padding: 2rem;
+
+   }
+
+   /* footer */
+   div.footer__rodape{
+    padding: 1%;
+    font-size: 0.8rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   }
+   p.creditos{
+    text-indent: 0.4rem;
+   }
 
 }
+
+
+/* Desktops--------------------------------------- */
+@media screen and (min-width: 1000px) {
+
+    /* menu */
+    div.sidebar{
+        display: none;
+    }
+
+    .navegation__menu{
+        overflow: hidden;
+        background-color: var(--cor-de-fundo02);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    nav.menu__bar{
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    ul.menu__list{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    li.menu__list__item{
+        list-style: none;
+        padding: 0.8rem;
+        display: inline;
+    }
+    li.menu__list__item:hover{
+        background-color: var(--button-repository-color);
+        color: var(--cor-de-fundo);
+        transition: 2s;
+    }
+    
+    .menu__list__item a{
+        font: 400 1rem var(--fonte-titulos);
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+    .menu__list__item a:hover{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+}
+
+
