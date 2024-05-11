@@ -1,9 +1,10 @@
 function openNav() {
-    document.getElementsByClassName("sidebar").style.width = "15rem";
-    document.getElementsByClassName("main__document").style.marginLeft = "16rem";
+    
+    document.getElementsByClassName("sidebar")[0].style.width = "250px";
+    document.getElementsByClassName("main__document")[0].style.marginLeft = "0";
   }
   
   function closeNav() {
-    document.getElementsByClassName("sidebar").style.width = "0";
-    document.getElementsByClassName("main__document").style.marginLeft= "0";
+    document.getElementsByClassName("sidebar")[0].style.width = "0";
+    document.getElementsByClassName("main__document")[0].style.marginLeft= "0";
   }

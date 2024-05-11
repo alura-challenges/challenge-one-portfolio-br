@@ -58,14 +58,64 @@ nav.menu__bar{
     display: none;
 }
 
+.sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--cor-destaque-7);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 3.75rem;
+}
 
+.sidebar a{
+    font: normal 1rem var(--fonte-subtitulos);
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    text-decoration: none;
+    color: var(--cor-destaque-1);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover{
+    color: var(--button-repository-color);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    margin: 1rem 1rem 1rem 3.1rem;
+  }
+  
+  .openbtn {
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--cor-destaque-1);
+    color: white;
+    padding: 0.6rem 0.9rem;
+    border: none;
+    position: fixed;
+  }
+  .openbtn:hover{
+    background-color: var(--button-repository-color);
+  }
+
+  .main__document{
+    transition: margin-left 0.5s;
+  }
 
 
 
 /*Sessão Title*/
 section.title{
-    margin: 10% 0 2%;
-    margin-top: 2.5rem;
+    padding-top: 2.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -469,6 +519,10 @@ div.footer__rodape{
     }
 
     /* formação academica */
+    section.academic{
+        margin: 8% 0 10%;
+    }
+
     h2.academic__title{
         text-align: start;
     }
@@ -476,23 +530,13 @@ div.footer__rodape{
     div.academic__courses{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     img.school__img{
         width: 10rem;
     }
 
-
-    /* formação academica */
-    section.academic{
-        margin: 8% 0 10%;
-    }
-
-    div.academic__courses{
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
 
     /* projetos */
     section.projects{
@@ -543,7 +587,7 @@ div.footer__rodape{
         border: solid 0.1rem var(--cor-destaque-1);
     }
 
-   div#contato.contact__container{
+   div.contact__container{
     display: flex;
     justify-content: center;
     padding: 0 2%;
@@ -601,6 +645,9 @@ div.footer__rodape{
     div.sidebar{
         display: none;
     }
+    .openbtn{
+        display: none;
+    }
 
     .navegation__menu{
         overflow: hidden;
@@ -646,6 +693,51 @@ div.footer__rodape{
     .menu__list__item a:hover{
         font-weight: 600;
         font-size: 1.2rem;
+    }
+
+    /* sobre mim */
+    section.about{
+        margin-bottom: 8%;
+    }
+
+    .about__container{
+        width: 70%;
+        margin-left: 3%;
+    }
+
+    
+
+    /* skills e hobbies */
+    h3.skills__title, .hobbies__title{
+        border: none;
+        align-self: center;
+    }
+
+    img.skills__img, .hobbies__img{
+       width: 5rem;
+    }
+
+    /* formação academica */
+    h2.academic__title{
+        text-align: center;
+    }
+
+    .academic__courses{
+        align-items: end;
+    }
+
+    img.school__img{
+        width: 20rem;
+    }
+
+
+    /* projetos */
+    h2.projects__section{
+        text-align: center;
+    }
+
+    p.projects__text{
+        font-size: 1.4rem;
     }
 
 }
