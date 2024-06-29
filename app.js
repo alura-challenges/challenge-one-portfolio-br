@@ -1,6 +1,6 @@
 function openNav() {
     
-    document.getElementsByClassName("sidebar")[0].style.width = "250px";
+    document.getElementsByClassName("sidebar")[0].style.width = "15.5rem";
     document.getElementsByClassName("main__document")[0].style.marginLeft = "0";
   }
   

@@ -44,6 +44,12 @@ body .all__document {
     overflow-x: hidden;
 }
 
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
 ol, ul,li {
     list-style: none;
 }
@@ -54,13 +60,8 @@ a{
 }
 
 /* Sessão do menu */
-nav.menu__bar{
-    display: none;
-}
-
-.sidebar{
-    height: 100%;
-    width: 0;
+div.sidebar{ /*menu mobile*/
+    height: 100vh;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -68,19 +69,19 @@ nav.menu__bar{
     background-color: var(--cor-destaque-7);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 3.75rem;
+    padding-top: 3rem;
 }
 
-.sidebar a{
+div.sidebar a{
     font: normal 1rem var(--fonte-subtitulos);
-    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
     text-decoration: none;
     color: var(--cor-destaque-1);
     display: block;
     transition: 0.3s;
 }
 
-.sidebar a:hover{
+div.sidebar a:hover{
     color: var(--button-repository-color);
     font-size: 1.3rem;
     font-weight: bold;
@@ -89,8 +90,7 @@ nav.menu__bar{
 .closebtn {
     position: absolute;
     top: 0;
-    right: 1.5rem;
-    margin: 1rem 1rem 1rem 3.1rem;
+    right: 0.5rem;
   }
   
   .openbtn {
@@ -102,7 +102,9 @@ nav.menu__bar{
     padding: 0.6rem 0.9rem;
     border: none;
     position: fixed;
+    z-index: 1;
   }
+
   .openbtn:hover{
     background-color: var(--button-repository-color);
   }
@@ -111,7 +113,9 @@ nav.menu__bar{
     transition: margin-left 0.5s;
   }
 
-
+  nav.menu__bar{
+    display: none;
+}
 
 /*Sessão Title*/
 section.title{
@@ -130,8 +134,7 @@ div.social__profile{
 }
 
 div.title__bio{
-    margin: 1% 2%;
-    gap: 3%;
+    margin: 0.6rem;
 }
 h1.name__inTitle{
     font: 500 1.9rem var(--fonte-titulos);
@@ -153,8 +156,7 @@ h1.name__inTitle{
 /* linha de redes sociais e links */
 ul.title__network{
     order: 3;
-    margin: 2%;
-    padding: 0 2%;
+    margin: 0.5rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -173,14 +175,13 @@ figure.title__network__img{
 }
 
 img.network__img{
-    width: 3.2rem;
+    width: 3.2rem;0.25s
 }
 
 img.title__profile{
     order: 2;
     border-radius: 25rem;
-    max-width: 55%;
-    margin: 3% 0 5%;
+    max-width: 55vw;
     border: dotted var(--cor-destaque-1);
 }
 
@@ -189,41 +190,38 @@ img.title__profile{
 section.about{
     background-image: linear-gradient(to bottom,#FB6F92, #fefdf4);
     width: 100vw;
-    margin-bottom: 25%;
+    margin-bottom: 4rem;
 }
 
 h3.about__title{
     font: bold 1.8rem var(--fonte-titulos);
     color: var(--cor-de-fundo);
-    text-indent: 1%;
-    padding: 3% 0 1%;
+    text-indent: 1rem;
+    padding-top: 1rem;
 }
 
 p.about__paragraph{
     font: normal 1.1rem var(--fonte-texto);
     color: var(--cor-de-texto);
     text-indent: 2rem;
-    margin: 5% 7%;
+    margin: 1rem 2rem;
 }
 
-/* Skills*/
+/* Skills + hobbies*/
 section.skills, .hobbies{
     width: 100vw;
-    padding: 0 2%;
-    margin-bottom: 25%;
+    margin-bottom: 4rem;
     background-image: linear-gradient(to bottom,#FD7F9F, #fefdf4);
 }
 
 h3.skills__title, .hobbies__title{
     font: normal 1.8rem var(--fonte-titulos);
     text-align: center;
-    border-bottom: solid 0.1rem;
-    padding: 3% 0 1%;
+    padding: 1rem 0 0.5rem;
 }
 
 div.skills__line, .hobbies__line{
-    margin: 2%;
-    padding: 0 2%;
+    margin: 0.6rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -240,7 +238,6 @@ img.skills__img, .hobbies__img{
     width: 5rem;
 }
 
-/* Hobbies */
 .hobbies{
     background-image: linear-gradient(to bottom,#FF8FAB, #fefdf4);
 }
@@ -257,15 +254,13 @@ img.skills__img, .hobbies__img{
 
 section.academic{
     width: 100vw;
-    margin-bottom: 25%;
-    padding: 0 2%;
+    margin-bottom: 4rem;
     background-image: linear-gradient(to bottom, #FFB3C6, #fefdf4);
 }
 
 h2.academic__title, .projects__section {
     font: normal 1.8rem var(--fonte-titulos);
     text-align: center;
-    border-bottom: solid 0.1rem var(--cor-destaque-1);
     padding: 3% 0 1%;
 }
 
@@ -273,8 +268,7 @@ figure.academic__courses--img{
     text-align: center;
     width: 90vw;
     margin: 0.5rem auto;
-    padding: 5% 0 2%;
-    border-bottom: dashed 0.1rem var(--cor-destaque-1);
+    padding: 1rem 0;
 }
 
 figcaption.school__name{
@@ -303,7 +297,6 @@ div.projects__box{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: dashed 0.1rem var(--cor-destaque-1);
 }
 
 img.projects__img{
@@ -340,15 +333,15 @@ div.projects__links{
 /* configurações dos botoes sessão projetos */
 button.repository__button, .acess__button{
     display: block;
-	padding: 10px 20px;
+    padding: 0.6rem 1.25rem;
     width: 8rem;
-	text-decoration: none;
-	font: bold 0.8rem var(--fonte-subtitulos);
-	position: relative;
-	color: var(--cor-de-fundo);
-	border-radius: 50px;
-	text-align: center;
-	transition-duration: 0.25s;
+    text-decoration: none;
+    font: bold 0.8rem var(--fonte-subtitulos);
+    position: relative;
+    color: var(--cor-de-fundo);
+    border-radius: 3rem;
+    text-align: center;
+    transition-duration: 0.25s;
 
 	&:hover {
         color: var(--cor-de-texto);
@@ -455,7 +448,7 @@ div.footer__rodape{
 
 
 /* Tablets------------------------------------------ */
-@media screen and (min-width: 600px){
+@media screen and (min-width: 768px){
     /* titulo principal */
     .title__bio h2{
         font-size: 2rem;
@@ -497,7 +490,7 @@ div.footer__rodape{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 8%;
+        margin-bottom: 5rem;
     }
 
     h3.skills__title, .hobbies__title{
@@ -520,7 +513,8 @@ div.footer__rodape{
 
     /* formação academica */
     section.academic{
-        margin: 8% 0 10%;
+        margin: 2rem 0 3rem;
+        padding: 0 2rem;
     }
 
     h2.academic__title{
@@ -584,7 +578,7 @@ div.footer__rodape{
     /* contato */
     h2.contact__title{
         padding: 2% 0;
-        border: solid 0.1rem var(--cor-destaque-1);
+        border-top: solid 0.1rem var(--cor-destaque-1);
     }
 
    div.contact__container{
@@ -639,7 +633,7 @@ div.footer__rodape{
 
 
 /* Desktops--------------------------------------- */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
 
     /* menu */
     div.sidebar{
@@ -697,12 +691,11 @@ div.footer__rodape{
 
     /* sobre mim */
     section.about{
-        margin-bottom: 8%;
+        margin-bottom: 5rem;
     }
 
     .about__container{
-        width: 70%;
-        margin-left: 3%;
+        margin: 4rem;
     }
 
     

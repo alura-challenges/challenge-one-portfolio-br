@@ -9,8 +9,7 @@
     <!-- folha de estilo css linkado -->
     <link rel="stylesheet" href="style css/style.css">
 
-    <!-- hamburguer menu icon -->
-    <script defer src="app.js"></script>
+    
 
     
     
@@ -219,26 +218,27 @@
             <section class="projects" id="projDev">
                 <h2 class="projects__section">Projetos</h2>
 
-                <div class="projects__box">
-                    <img class="projects__img" src="assets/jogo-numSecreto-prtSc.png">
-                    <div class="projects__info">
-                        <h3 class="projects__title">Jogo do número secreto</h3>
-                        <p class="projects__text">O primeiro projeto web que desenvolvi, realizado durante a fase de seleção do Programa ONE.</p>
-                            <div class="projects__links">
-
-                                <a href="https://github.com/cah-rodrigues/Jogo-do-numero-secreto---ONE" target="_blank">
-                                    <button class="repository__button">
-                                    Repositório</button>
-                                </a>
-                                    
-                                <a href="https://jogo-do-numero-iota.vercel.app/" target="_blank">
-                                    <button class="acess__button">Acessar</button>
-                                </a>
+                <div>
+                    <h3 class="projects__title">Jogo do número secreto</h3>
+                        <div class="projects__box">
+                            <img class="projects__img" src="assets/jogo-numSecreto-prtSc.png">
+                            <div class="projects__info">
+                                <p class="projects__text">O primeiro projeto web que desenvolvi, realizado durante a fase de seleção do Programa ONE.</p>
+                                    <div class="projects__links">
+                                        <a href="https://github.com/cah-rodrigues/Jogo-do-numero-secreto---ONE" target="_blank">
+                                            <button class="repository__button">
+                                            Repositório</button>
+                                        </a>
+                        
+                                        <a href="https://jogo-do-numero-iota.vercel.app/" target="_blank">
+                                            <button class="acess__button">Acessar</button>
+                                        </a>
+                                    </div>
                             </div>
                     </div>
                 </div>
 
-                <div class="projects__box">
+                <!-- <div class="projects__box">
 
                     <div class="imgs__box">
                         <img class="projects__img" src="assets/portfolio01.png">
@@ -303,7 +303,7 @@
                                 </span>
                             </div>
                     </div>
-                </div>
+                </div> -->
             </section>
 
             <!-- sessão de contato -->
@@ -329,7 +329,7 @@
         
                             <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="comment" placeholder="Sua mensagem" maxlength="300" minlength="1" required></textarea>
         
-                            <button class="formcontato__botao" type="submit" value="send">Enviar mensagem</button>
+                            <button class="formcontato__botao" type="submit">Enviar mensagem</button>
                         </form>
                     </div>
 
@@ -345,5 +345,9 @@
             </div>
         </footer>
     </div>
+
+<!-- hamburguer menu icon -->
+<script src="app.js"></script>
+<script src="validate.js"></script>
 </body>
 </html>
