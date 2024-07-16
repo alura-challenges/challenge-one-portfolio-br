@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    --cor-de-fundo: #fefdf4;
+    --cor-de-fundo02: #f2d6e3;
+    --cor-destaque-1: #FB6F92;
+    --cor-destaque-2: #FD7F9F;
+    --cor-destaque-3: #FF8FAB;
+    --cor-destaque-4: #FFB3C6;
+    --cor-destaque-5: #FFC2D1;
+    --cor-destaque-6: #FFD4DF;
+    --cor-destaque-7: #FFE5EC;
+    --cor-de-texto: #000;
+
+    --button-repository-color: #f60073 ;
+    --button-acess-color: #f10a4b;
+    --button-hover: #f2a4cc;
+
+    --fonte-titulos: "Roboto Condensed", sans-serif;
+    --fonte-subtitulos: "Days One", sans-serif;
+    --fonte-texto: "Share Tech Mono", monospace;
+}
+
+body {
+    background-color: var(--cor-de-fundo) ;
+    font-family: var(--fonte-texto);
+    font-weight: 400;
+    font-style: normal;
+}
+
+body .all__document {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow-x: hidden;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/* Sessão do menu */
+div.sidebar{ /*menu mobile*/
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--cor-destaque-7);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 3rem;
+}
+
+div.sidebar a{
+    font: normal 1rem var(--fonte-subtitulos);
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--cor-destaque-1);
+    display: block;
+    transition: 0.3s;
+}
+
+div.sidebar a:hover{
+    color: var(--button-repository-color);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+  }
+  
+  .openbtn {
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--cor-destaque-1);
+    color: white;
+    padding: 0.6rem 0.9rem;
+    border: none;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .openbtn:hover{
+    background-color: var(--button-repository-color);
+  }
+
+  .main__document{
+    transition: margin-left 0.5s;
+  }
+
+  nav.menu__bar{
+    display: none;
+}
+
+/*Sessão Title*/
+section.title{
+    padding-top: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.social__profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.title__bio{
+    margin: 0.6rem;
+}
+h1.name__inTitle{
+    font: 500 1.9rem var(--fonte-titulos);
+    text-align: center;
+    color: var(--cor-destaque-1);
+    border: 0.10rem solid var(--cor-destaque-1);
+    padding: 0.1rem;
+}
+.title__bio h2{
+    font: 300 1.7em var(--fonte-titulos);
+    text-align: start;
+}
+
+.title__bio h3{
+    font: 1.5rem var(--fonte-titulos);
+    text-align: end;
+}
+
+/* linha de redes sociais e links */
+ul.title__network{
+    order: 3;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: baseline;
+}
+
+.title__network li{
+    margin: 0.2rem;
+    text-align: center;
+}
+
+figure.title__network__img{
+    font: 0.8rem var(--fonte-subtitulos);
+    text-align: center;
+}
+
+img.network__img{
+    width: 3.2rem;0.25s
+}
+
+img.title__profile{
+    order: 2;
+    border-radius: 25rem;
+    max-width: 55vw;
+    border: dotted var(--cor-destaque-1);
+}
+
+/*Sessão About*/
+
+section.about{
+    background-image: linear-gradient(to bottom,#FB6F92, #fefdf4);
+    width: 100vw;
+    margin-bottom: 4rem;
+}
+
+h3.about__title{
+    font: bold 1.8rem var(--fonte-titulos);
+    color: var(--cor-de-fundo);
+    text-indent: 1rem;
+    padding-top: 1rem;
+}
+
+p.about__paragraph{
+    font: normal 1.1rem var(--fonte-texto);
+    color: var(--cor-de-texto);
+    text-indent: 2rem;
+    margin: 1rem 2rem;
+}
+
+/* Skills + hobbies*/
+section.skills, .hobbies{
+    width: 100vw;
+    margin-bottom: 4rem;
+    background-image: linear-gradient(to bottom,#FD7F9F, #fefdf4);
+}
+
+h3.skills__title, .hobbies__title{
+    font: normal 1.8rem var(--fonte-titulos);
+    text-align: center;
+    padding: 1rem 0 0.5rem;
+}
+
+div.skills__line, .hobbies__line{
+    margin: 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: baseline;
+}
+
+figure.skills__itens, .hobbies__itens{
+    text-align: center;
+    width: min-content;
+    margin: 0.5rem auto;
+}
+
+img.skills__img, .hobbies__img{
+    width: 5rem;
+}
+
+.hobbies{
+    background-image: linear-gradient(to bottom,#FF8FAB, #fefdf4);
+}
+
+.hobbies__line{
+    justify-content: center;
+}
+
+.hobbies__itens{
+    margin: 0.5rem;
+}
+
+/* Experiência Acadêmica*/
+
+section.academic{
+    width: 100vw;
+    margin-bottom: 4rem;
+    background-image: linear-gradient(to bottom, #FFB3C6, #fefdf4);
+}
+
+h2.academic__title, .projects__section {
+    font: normal 1.8rem var(--fonte-titulos);
+    text-align: center;
+    padding: 3% 0 1%;
+}
+
+figure.academic__courses--img{
+    text-align: center;
+    width: 90vw;
+    margin: 0.5rem auto;
+    padding: 1rem 0;
+}
+
+figcaption.school__name{
+    font: 1rem var(--fonte-texto);
+}
+
+img.school__img{
+    width: 90vw;
+    padding-bottom: 2%;
+}
+
+
+
+/* Projetos*/
+
+section.projects{
+    background-image: linear-gradient(to bottom, #FFC2D1, #fefdf4);
+    width: 100vw;
+    margin-bottom: 10%;
+    padding: 0 2%;
+}
+
+div.projects__box{
+    margin: 5% 0;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img.projects__img{
+    max-width: 90%;
+    margin: 2% 0;
+}
+
+div.imgs__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3.projects__title{
+    font: 1.3rem var(--fonte-subtitulos);
+    padding: 3% 0 1%;
+    text-align: center;
+}
+
+p.projects__text{
+    font: normal 1.2rem var(--fonte-texto);
+    color: var(--cor-de-texto);
+    text-indent: 1rem;
+    margin: 5% 7%;
+}
+
+div.projects__links{
+    margin: 1rem 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* configurações dos botoes sessão projetos */
+button.repository__button, .acess__button{
+    display: block;
+    padding: 0.6rem 1.25rem;
+    width: 8rem;
+    text-decoration: none;
+    font: bold 0.8rem var(--fonte-subtitulos);
+    position: relative;
+    color: var(--cor-de-fundo);
+    border-radius: 3rem;
+    text-align: center;
+    transition-duration: 0.25s;
+
+	&:hover {
+        color: var(--cor-de-texto);
+        background-color: var(--button-hover);
+        font-size: 1rem;
+	}
+}
+
+button.repository__button{
+    background-color: var(--button-repository-color);
+}
+
+button.acess__button{
+    background-color: var(--button-acess-color);
+}
+
+/*Contato*/
+
+section.contact{
+    width: 100vw;
+    margin-bottom: 5%;
+}
+
+div.contact__section__img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2.contact__title{
+    font: normal 1.6rem var(--fonte-titulos);
+    color: var(--cor-de-texto);
+    text-align: center;
+    padding: 3% 0 5%;
+}
+
+img.contact__img{
+    width: 88%;
+}
+
+.contact__text{
+    margin: 5% 7%;
+}
+
+.contact__text h3{
+    font: 1.2rem var(--fonte-subtitulos);
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.contact__text p {
+    font-size: 1.1rem;
+    text-indent: 1rem;
+}
+
+form.contact__form{
+    margin: 0 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formcontato__input, .formcontato__textarea{
+    width: 99%;
+    margin: 1.5rem 0 0 0;
+    padding: 1rem;
+}
+
+button.formcontato__botao{
+    display: block;
+	padding: 1rem 2rem;
+    width: 14rem;
+	text-decoration: none;
+	font: bold 1.1rem var(--fonte-texto);
+	position: relative;
+	color: var(--cor-de-fundo);
+	border-radius: 50px;
+	text-align: center;
+	transition-duration: 0.25s;
+    background-color: var(--cor-destaque-1);
+    margin: 8%;
+
+	&:hover {
+        background-color: #0a91f1;
+        font-size: 1rem;
+	}
+}
+
+/*footeer*/
+
+section.footer{
+    margin: 2% ;
+}
+
+div.footer__rodape{
+    padding: 2% 3%;
+    text-align: center;
+    font: 0.7rem sans-serif;
+    color: var(--cor-de-fundo);
+    background-color: var(--button-acess-color);
+}
+
+
+
+
+/* Tablets------------------------------------------ */
+@media screen and (min-width: 768px){
+    /* titulo principal */
+    .title__bio h2{
+        font-size: 2rem;
+    }
+    .title__bio h1{
+        font-size: 2.3rem;
+    }
+
+/* Foto e redes sociais */
+    div.social__profile{
+        flex-direction: row-reverse;
+    }
+
+    img.title__profile{
+        max-width: 30%;
+        margin: 3% 5% ;
+    }
+
+    ul.title__network{
+        max-width: 35%;
+    }
+
+    img.network__img{
+        width: 6rem;
+    }
+
+    /* Sobre mim */
+    section.about{
+        margin-bottom: 15%;
+    }
+
+    p.about__paragraph{
+        margin: 3%;
+    }
+
+    /* Skills e hobbies */
+    section.skills, .hobbies{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    h3.skills__title, .hobbies__title{
+        border: none;
+        align-self: flex-start;
+    }
+
+    div.skills__line, .hobbies__line{
+        width: 75%;
+        align-items: baseline;
+    }
+
+    img.skills__img, .hobbies__img{
+        width: 6rem;
+    }
+
+    figcaption.skills__name, .hobbies__name{
+        font-size: 1rem;
+    }
+
+    /* formação academica */
+    section.academic{
+        margin: 2rem 0 3rem;
+        padding: 0 2rem;
+    }
+
+    h2.academic__title{
+        text-align: start;
+    }
+
+    div.academic__courses{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    img.school__img{
+        width: 10rem;
+    }
+
+
+    /* projetos */
+    section.projects{
+        margin-bottom: 8%;
+    }
+    
+    h2.projects__section{
+        text-align: start;
+    }
+
+    div.projects__box{
+        margin: 2% 5%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+    }
+
+    div.imgs__box{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    img.projects__img{
+        width: 26rem;
+    }
+
+    div.projects__info{
+        width: 45%;
+        margin-left: 2%;
+    }
+    p.projects__text{
+        font-size: 1rem;
+    }
+
+    button.repository__button, .acess__button{
+        width: 7.5rem;
+        text-align: center;
+        font: 0.8rem var(--fonte-subtitulos);
+        margin-right: 0.5rem;
+    }
+
+    /* contato */
+    h2.contact__title{
+        padding: 2% 0;
+        border-top: solid 0.1rem var(--cor-destaque-1);
+    }
+
+   div.contact__container{
+    display: flex;
+    justify-content: center;
+    padding: 0 2%;
+   }
+
+   div.contact__section__img{
+    width: 50%;
+   }
+
+   img.contact__img{
+    width: 26rem;
+    height: 24rem;
+   }
+
+   div.contact__text{
+     margin: 2%;
+     width: 50%;
+     height: 25rem;
+   }
+
+   form.contact__form {
+     height: 70%;
+   }
+
+   input.formcontato__input{
+     width: 90%;
+     padding: 0.5rem;
+     margin-top: 1rem;
+   }
+   .formcontato__textarea{
+     width: 90%;
+     padding: 2rem;
+
+   }
+
+   /* footer */
+   div.footer__rodape{
+    padding: 1%;
+    font-size: 0.8rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   }
+   p.creditos{
+    text-indent: 0.4rem;
+   }
+
+}
+
+
+/* Desktops--------------------------------------- */
+@media screen and (min-width: 1024px) {
+
+    /* menu */
+    div.sidebar{
+        display: none;
+    }
+    .openbtn{
+        display: none;
+    }
+
+    .navegation__menu{
+        overflow: hidden;
+        background-color: var(--cor-de-fundo02);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    nav.menu__bar{
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    ul.menu__list{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    li.menu__list__item{
+        list-style: none;
+        padding: 0.8rem;
+        display: inline;
+    }
+    li.menu__list__item:hover{
+        background-color: var(--button-repository-color);
+        color: var(--cor-de-fundo);
+        transition: 2s;
+    }
+    
+    .menu__list__item a{
+        font: 400 1rem var(--fonte-titulos);
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+    .menu__list__item a:hover{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    /* sobre mim */
+    section.about{
+        margin-bottom: 5rem;
+    }
+
+    .about__container{
+        margin: 4rem;
+    }
+
+    
+
+    /* skills e hobbies */
+    h3.skills__title, .hobbies__title{
+        border: none;
+        align-self: center;
+    }
+
+    img.skills__img, .hobbies__img{
+       width: 5rem;
+    }
+
+    /* formação academica */
+    h2.academic__title{
+        text-align: center;
+    }
+
+    .academic__courses{
+        align-items: end;
+    }
+
+    img.school__img{
+        width: 20rem;
+    }
+
+
+    /* projetos */
+    h2.projects__section{
+        text-align: center;
+    }
+
+    p.projects__text{
+        font-size: 1.4rem;
+    }
+
+}
+
+
