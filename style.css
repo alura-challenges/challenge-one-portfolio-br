@@ -1,130 +1,109 @@
-/*CSS Reset / Normalize*/
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
-
-:root{
-    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+/* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo-menu: #ffffff;
+    --cor-do-link: #000000;
 }
 
 body {
-    box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
     margin: 0;
+    box-sizing: border-box;
     padding: 0;
-    line-height: 1;
+    line-height: 1.6;
 }
-ol, ul,li {
+
+ol, ul, li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
-    color: var(--cor-de-link);
+    color: var(--cor-do-link);
 }
 
-/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
-de utiliza-la. 
-
-Mas o que é o BEM?
-
-BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
-web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
-Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
-de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
-
-Link da documentação oficial!
-https://en.bem.info/methodology/quick-start/*/
-
-/*Sessão Menu*/
-
-section.menu{
-
+/* ------------------------------ Seção Menu -------------------------------*/
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-menu);
 }
 
-/*Sessão Title*/
-
-section.title{
-
+.cabecalho__logo {
+    max-width: 80px; /* Ajuste para telas pequenas */
 }
 
-/*Sessão About*/
-
-section.about{
-
+.cabecalho__titulo {
+    font-size: 1.2rem;
+    text-align: center;
 }
 
-/*Sessão Hobbies*/
-
-section.hobbies{
-    
+.navegacao__lista {
+    display: none;
 }
 
-/* Experiência Acadêmica*/
-
-section.academic{
-
+.navegacao__elemento a {
+    font-size: 0.9rem;
 }
+/* ------------------------------ Seção Apresentação ------------------------------*/
 
-/* experiência*/
 
-section.experience{
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
 
-}
 
-/*Contato*/
+/*------------------------------ Seção de Habilidades ------------------------------*/
 
-section.formcontato{
 
-}
+/*------------------------------ Seção de Hobbies --------------------------------*/
 
-/*footeer*/
 
-section.footer{
-   
-}
+/*------------------------------ Seção de Projetos --------------------------------*/
 
-/* Chegou a hora de se desafiar com a responsividade, 
-utilize como referência os breakpoints @media abaixo*/
 
-/*Tablet*/
+/*------------------------------ Seção de Contato ---------------------------------*/
+
+
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+/* Tablets e telas maiores */
 @media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-/* Menu */
+    .cabecalho__logo {
+        max-width: 100px;
+    }
 
-/*title*/
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+    }
 
-/*Skills*/
+    .navegacao__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
 
-/*Hobbies*/
-
-/*Experiências acadêmicas*/
-
-/*Expeirência profissional*/
-
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
 }
 
-/*Mobile*/
-@media (min-width: 425px) {
+/* Telas grandes */
+@media (min-width: 1024px) {
+    /* Aqui você pode ajustar ainda mais o design para telas grandes */
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
 
-/*Menu*/
-
-/*Titulo*/
-
-/*Sessão sobre*/
-
-/*Skills*/
-
-/*Hobbies*/
- 
-/*Formação Acadêmica*/
-
-/*Experiência Profissional*/
-
- /*Contato*/
-
-/*Footer*/
-
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
 }
